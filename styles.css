@@ -27,6 +27,10 @@ h1 {
     display: none;
 }
 
+label {
+display: none;
+}
+
 
 /* MENÚ PRINCIPAL */
 .menu-principal {
@@ -629,7 +633,7 @@ article h3 {
 }
 
 .card-text {
-    font-size: 14px;
+    font-size: 1rem;
     margin: 0;
 }
 
@@ -865,9 +869,11 @@ padding: 0px;
     background-position: center;
     border-radius: 0px 60px 0px 60px;
     padding: 30px;
-    color: #fff;
+    color: #000000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     transition: transform 0.3s ease;
+    box-shadow: inset 500px 500px 10px rgba(19, 5, 0, 0.2); /* Sombra interna */
+
 }
 
 .mision:hover {
@@ -907,10 +913,12 @@ padding: 0px;
     align-items: flex-start;
     gap: 20px;
     position: relative;
+    margin: 20px;
 }
 
 .texto {
     flex: 1;  /* Ocupará todo el espacio disponible a la izquierda */
+    font-size: 1.25rem;
     text-align: justify;
 }
 
@@ -1192,19 +1200,19 @@ color: #ffffff;
     }
 
     .articulos h3 {
-        font-size: 1rem; 
+        font-size: 1.1rem; 
         max-width: 180px;
         padding: 0px;
         margin: 0px;
     }
 
     p, .filtro-icon-text, .btn-enviar, .footer-links a, .footer-cookies a, .menu-items a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /* Menú móvil */
     .menu-movil-superior, .menu-movil a {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 0px 0px;
     }
 
@@ -1231,18 +1239,18 @@ color: #ffffff;
     /* Formulario */
     .form-group input,
     .form-group textarea {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 6px;
         border-radius: 15px;
     }
 
     .btn-enviar {
-        font-size: 1rem;
+        font-size: 1.1rem;
         padding: 6px 15px;
     }
 
     .btn-ver, .filtro-buscador input {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /* Tarjetas de clasificación */
@@ -1253,15 +1261,15 @@ color: #ffffff;
     }
 
     .card-title {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .card-content .icon {
-        font-size: 20px;
+        font-size: 1.1rem;
     }
 
     .card-text {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /* Sección Sobre / Equipo */
@@ -1272,11 +1280,11 @@ color: #ffffff;
     }
 
     .info-equipo h3 {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     .info-equipo p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /* Misiones */
@@ -1291,11 +1299,11 @@ color: #ffffff;
     }
 
     .mision h3 {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .mision p {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     /* Cabeceras */
@@ -1326,12 +1334,12 @@ color: #ffffff;
     }
 
     .btn-ver-trailer {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 6px 10px;
     }
 
     .trailer-button {
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding: 6px 10px;
     }
 
@@ -1343,7 +1351,7 @@ color: #ffffff;
     /* Footer */
     .footer-links a,
     .footer-cookies a {
-        font-size: 0.75rem;
+        font-size: 1rem;
     }
 }
 
