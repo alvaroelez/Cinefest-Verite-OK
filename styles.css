@@ -125,7 +125,7 @@ display: none;
     justify-content: space-around;
     background-color: #000000;
     padding: 0px 0px;
-    border-bottom:0px;
+    border-bottom: 0px solid #000000;
     align-items: center;
     margin: 0px;
 }
