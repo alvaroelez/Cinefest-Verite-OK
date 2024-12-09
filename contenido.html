@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="CineFest Verité - Un Espacio para el Cine Documental">
+    <meta name="description" content="CineFest Verité es un festival dedicado al cine documental independiente, promoviendo la democratización del acceso y la reflexión social a través del cine.">
+    <meta name="keywords" content="cine documental, festival de cine, cine independiente, reflexión social, CineFest Verité">
+    <meta name="robots" content="index, follow">
+    <title>Ficha de la película</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Aleo:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Descubre todo el contenido que te espera en Cinefest Verite</h1>
+            <!-- MENÚ PRINCIPAL -->
+            <nav class="menu-principal">
+                <ul class="menu-items">
+                    <li><a href="#perfil">Mi Perfil</a></li>
+                    <li><a href="#eventos">Eventos y Actividades</a></li>
+                    <li><a href="contenido.html">Contenido</a></li>
+                    <li class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo CineFest Verité">CineFest Verité</a></li>
+                    <li><a href="sobre.html">Sobre el festival</a></li>
+                    <li>
+                        <div class="buscador">
+                            <input type="text" placeholder="Buscador">
+                            <button type="button" aria-label="Buscar" class="search-btn"><i class="fas fa-search" aria-hidden="true"></i></button>
+                        </div>
+                    </li>
+                    <li><a href="#ayuda">Ayuda</a></li>
+                </ul>
+            </nav>
+
+            <!-- MENÚ MÓVIL -->
+            <div class="menu-movil">
+                <ul class="menu-movil-superior">
+                    <li class="menumovil"><a href="#perfil">Mi Perfil</a></li>
+                    <li class="menumovil"><a href="index.html"><img src="images/logo.png" alt="Logo CineFest Verité"></a></li>
+                    <li class="menumovil"><a href="#ayuda">Ayuda</a></li>
+                </ul>
+
+                <ul class="menu-movil-inferior">
+                    <li class="menumovil">
+                        <a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos y Actividades</a>
+                    </li>
+                    <li class="menumovil">
+                        <a href="contenido.html"><i class="fas fa-film"></i> Contenido</a>
+                    </li>
+                    <li class="menumovil">
+                        <a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre el festival</a>
+                    </li>
+                    <li class="menumovil">
+                        <a href="#busqueda"><i class="fas fa-search"></i> Buscar</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="cabeceracontenido">
+            </div>
+        </header>
+
+        
+
+        <!-- FILTRO DE PELICULAS -->
+        <div class="filtro-contenidos" style="background-image: url('images/fondofiltro.png');">
+            <div class="filtro-container">
+                <div class="filtro-icon-text">
+                    <i class="fas fa-bars"></i>
+                    <span>Filtrar por género</span>
+                </div>
+                <form class="filtro-buscador">
+                    <input type="text" placeholder="Nombre de la película">
+                    <button type="submit" aria-label="Buscar" class="search-btn"><i class="fas fa-search" aria-hidden="true"></i></button>
+                </form>
+            </div>
+        </div>
+
+        
+
+
+
+        <!-- SECCIÓN CIENCIA Y TECNOLOGÍA -->
+        <section class="estilo1" id="cienciaytecnología">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea"></span>
+                    <h2>CIENCIA Y TECNOLOGÍA</h2>
+                    <span class="linea"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="carousel-track">
+
+                    <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>HORIZONTE DE SICILIO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/horizontedesicilio.png" alt="Susurros de la Naturaleza">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>EN LOS LIMITES DEL CONOCIMIENTO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/enloslimitesdelconocimiento.png" alt="Caminos Entrelazados">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>GUARDIANES DE LA TIERRA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/guardianesdelatierra.png" alt="Cómo Elaborar un Guion">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>MENTES SINTÉTICAS</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/mentessinteticas.png" alt="La Niebla">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 6 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+                    
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+
+
+        <!-- SECCIÓN NATURALEZA Y MEDIO AMBIENTE -->
+        <section class="estilo1" id="naturalezaymedioambiente">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea"></span>
+                    <h2>CIENCIA Y TECNOLOGÍA</h2>
+                    <span class="linea"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="carousel-track peliculas-dos-filas">
+
+                     <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>SUSURROS DE LA NATURALEZA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/susurrosdelanaturaleza.png" alt="Susurros de la Naturaleza">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>CUMBRES ETERNAS</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/cumbreseternas.png" alt="Caminos Entrelazados">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>OCEANOS MUDOS</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/oceanosmudos.png" alt="Cómo Elaborar un Guion">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>HUELLAS DE PLÁSTICO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/huellasdeplastico.png" alt="La Niebla">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 6 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+                    
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+        
+
+
+        <!-- SECCIÓN POLÍTICA Y SOCIEDAD -->
+        <section class="estilo1" id="politicaysociedad">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea"></span>
+                    <h2>POLÍTICA Y SOCIEDAD</h2>
+                    <span class="linea"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="carousel-track peliculas-dos-filas">
+
+                     <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>VOCES DEL PUEBLO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/vocesdelpueblo.png" alt="Susurros de la Naturaleza">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>EL ARTE DE GOBERNAR</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/elartedegobernar.png" alt="Caminos Entrelazados">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>TEJIDO HUMANO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/tejidohumano.png" alt="Cómo Elaborar un Guion">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>ROSTROS DE LA CIUDAD</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/rostrosdelaciudad.png" alt="La Niebla">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 6 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+                    
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+
+                <!-- SECCIÓN CULTURA Y ARTE -->
+                <section class="estilo1" id="culturayarte">
+                    <div class="titulo-con-lineas">
+                        <div class="lineaytitulo">
+                            <span class="linea"></span>
+                            <h2>CULTURA Y ARTE</h2>
+                            <span class="linea"></span>
+                        </div>
+                        <a href="#" class="ver-mas">ver +</a>
+                    </div>
+        
+                    <!-- Container que engloba el carrusel --> 
+                    <div class="carousel-container">
+                        <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                        <div class="carousel-track peliculas-dos-filas">
+        
+                             <!-- Artículo 1 -->
+                            <article class="articulos">
+                                <h3>COLORES DEL ALMA</h3>
+                                <div class="contenedor-imagen">
+                                    <img src="images/coloresdelalma.png" alt="Susurros de la Naturaleza">
+                                    <a href="ficha.html" class="icono-play">
+                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                    </a>
+                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                                </div>
+                            </article>
+        
+                            <!-- Artículo 2 -->
+                            <article class="articulos">
+                                <h3>RAICES QUE CANTAN</h3>
+                                <div class="contenedor-imagen">
+                                    <img src="images/raicesquecantan.png" alt="Caminos Entrelazados">
+                                    <a href="ficha.html" class="icono-play">
+                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                    </a>
+                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                                </div>
+                            </article>
+                    
+                            <!-- Artículo 3 -->
+                            <article class="articulos">
+                                <h3>MANOS CREATIVAS</h3>
+                                <div class="contenedor-imagen">
+                                    <img src="images/manoscreativas.png" alt="Cómo Elaborar un Guion">
+                                    <a href="ficha.html" class="icono-play">
+                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                    </a>
+                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                                </div>
+                            </article>
+                    
+                            <!-- Artículo 4 -->
+                            <article class="articulos">
+                                <h3>BELLEZA OCULTA</h3>
+                                <div class="contenedor-imagen">
+                                    <img src="images/bellezaoculta.png" alt="La Niebla">
+                                    <a href="ficha.html" class="icono-play">
+                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                    </a>
+                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                                </div>
+                            </article>
+                
+                            <!-- Artículo 5 -->
+                            <article class="articulos">
+                                <h3>INCLUIR PELÍCULA</h3>
+                                <div class="contenedor-imagen">
+                                    <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                                    <a href="ficha.html" class="icono-play">
+                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                    </a>
+                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                                </div>
+                            </article>
+                
+                            <!-- Artículo 6 -->
+                            <article class="articulos">
+                                <h3>INCLUIR PELÍCULA</h3>
+                                <div class="contenedor-imagen">
+                                    <img src="images/incluirpelicula.png" alt="Melodía">
+                                    <a href="ficha.html" class="icono-play">
+                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                    </a>
+                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                                </div>
+                            </article>
+                            
+                        </div>
+                        <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </section>
+
+
+        <!-- SECCIÓN MÚSICA Y DEPORTE -->
+        <section class="estilo1" id="musicaydeporte">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea"></span>
+                    <h2>POLÍTICA Y SOCIEDAD</h2>
+                    <span class="linea"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="carousel-track peliculas-dos-filas">
+
+                     <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>MELODÍAS ENTRE ASFALTO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/melodiasentreasfalto.png" alt="Susurros de la Naturaleza">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>CORAZONES EN JUEGO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/corazonesenjuego.png" alt="Caminos Entrelazados">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>ECOS DE CREATIVIDAD</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/ecosdecreatividad.png" alt="Cómo Elaborar un Guion">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>GOLPE PERFECTO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/golpeperfecto.png" alt="La Niebla">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 6 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+                    
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN INVESTIGACIÓN Y CRIMEN -->
+        <section class="estilo1" id="investigaciónycrimen">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea"></span>
+                    <h2>INVESTIGACIÓN Y CRIMEN</h2>
+                    <span class="linea"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="carousel-track peliculas-dos-filas">
+
+                     <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>EN BUSCA DEL CONOCIMIENTO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/enbuscadelconocimiento.png" alt="Susurros de la Naturaleza">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>HUELLAS EN SILENCIO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/huellasensilencio.png" alt="Caminos Entrelazados">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>TEJIDO EN PRUEBAS</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/tejidoenpruebas.png" alt="Cómo Elaborar un Guion">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>EN NOMBRE DE LA JUSTICIA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/ennombredelajusticia.png" alt="La Niebla">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 6 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+                    
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN VIDAS PERSONALES Y BIOGRAFÍA -->
+        <section class="estilo1" id="vidaspersonalesybiografia">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea"></span>
+                    <h2>VIDAS PERSONALES Y BIOGRAFÍA</h2>
+                    <span class="linea"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <div class="carousel-track peliculas-dos-filas">
+
+                     <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>LAZOS INVISIBLES</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/lazosinvisibles.png" alt="Susurros de la Naturaleza">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>PÁGINAS DE UNA VIDA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/paginasdeunavida.png" alt="Caminos Entrelazados">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>ENTRE EL VACÍO Y LA MENTE</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/entreelvacioylamente.png" alt="Cómo Elaborar un Guion">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>TRAS LAS HUELLAS DEL PASADO</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/traslashuellasdelpasado.png" alt="La Niebla">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 6 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                        </div>
+                    </article>
+                    
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+
+            </div>
+        </section>
+
+
+
+<!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
+<section class="formulario">
+    <div class="lineaytitulo">
+        <span class="linea"></span>
+        <h2>FORMULARIO DE CONTACTO</h2>
+        <span class="linea"></span>
+    </div>
+
+    <div class="formulario-contacto">
+    <div class="form-container">
+        <form>
+            <div class="form-row">
+                <div class="form-group"><input type="text" id="nombre" name="nombre" placeholder="Nombre" required ></div>
+                <div class="form-group"><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required></div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group"><input type="email" id="email" name="email" placeholder="Email"  required></div>
+                <div class="form-group"><input type="tel" id="telefono" name="telefono" placeholder="Teléfono" ></div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group full-width"><input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required></div>
+            </div>
+
+            <div class="form-row"><div class="form-group full-width"><textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea></div>
+            </div>
+
+            <div class="form-row btn-row">
+                <button type="submit" class="btn-enviar">Enviar</button>
+            </div>
+        </form>
+    </div>
+    </div>
+</section>
+
+<!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
+<div class="partners-section">
+    <div class="partners-container">
+        <div class="partners-left">Partners:</div>
+        <div class="partners-right">Colaboradores</div>
+    </div>
+</div>
+
+<!-- COMIENZA EL FOOTER -->
+<footer class="footer-container">
+    <div class="footer-links">
+        <a href="#">Noticias</a>
+        <a href="#">Notas de prensa</a>
+        <a href="#">Contacto</a>
+        <a href="#">Información legal</a>
+        <a href="#">Galería fotográfica</a>
+        <a href="#">Trabaja con nosotros</a>
+        <a href="#">Ayuda</a>
+    </div>
+    
+    <!-- Íconos de redes sociales -->
+    <div class="footer-social">
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+    </div>
+    <div class="footer-cookies">
+        <a href="#">Política de cookies</a>
+    </div>
+</footer>
+
+<!-- SCRIPT PARA EL CARRUSEL -->
+<script>
+    document.querySelectorAll('.carousel-container').forEach(container => {
+        const track = container.querySelector('.carousel-track');
+        const btnLeft = container.querySelector('.left-btn');
+        const btnRight = container.querySelector('.right-btn');
+
+         // Ajusta la cantidad de scroll
+        const scrollAmount = 300;
+
+        btnLeft.addEventListener('click', () => {
+            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        });
+
+        btnRight.addEventListener('click', () => {
+            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+        });
+    });
+</script>
+
+</div>
+</body>
+</html>
