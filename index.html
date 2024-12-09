@@ -16,9 +16,9 @@
 <body>
     <div class="container">
         <header>
-            <h1>Cinefest Verite - El mejor festival de cine documental</h1>
+            <h1>Cinefest Verité - El mejor festival de cine documental</h1>
             <!-- MENÚ PRINCIPAL -->
-            <nav class="menu-principal">
+            <nav class="menu-principal" aria-label="Menú principal">
                 <ul class="menu-items">
                     <li><a href="#perfil">Mi Perfil</a></li>
                     <li><a href="#eventos">Eventos y Actividades</a></li>
@@ -27,8 +27,11 @@
                     <li><a href="sobre.html">Sobre el festival</a></li>
                     <li>
                         <div class="buscador">
-                            <input type="text" placeholder="Buscador">
-                            <button type="button" aria-label="Buscar" class="search-btn"><i class="fas fa-search" aria-hidden="true"></i></button>
+                            <label for="buscador" class="visually-hidden">Buscar</label>
+                            <input type="text" id="buscador" placeholder="Buscador" name="buscador">
+                            <button type="button" aria-label="Buscar" class="search-btn">
+                                <span class="fas fa-search" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </li>
                     <li><a href="#ayuda">Ayuda</a></li>
@@ -36,7 +39,7 @@
             </nav>
 
             <!-- MENÚ MÓVIL -->
-            <div class="menu-movil">
+            <div class="menu-movil" aria-label="Menú móvil">
                 <ul class="menu-movil-superior">
                     <li class="menumovil"><a href="#perfil">Mi Perfil</a></li>
                     <li class="menumovil"><a href="index.html"><img src="images/logo.png" alt="Logo CineFest Verité"></a></li>
@@ -45,50 +48,52 @@
 
                 <ul class="menu-movil-inferior">
                     <li class="menumovil">
-                        <a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos y Actividades</a>
+                        <a href="#eventos"><span class="fas fa-calendar-alt" aria-hidden="true"></span> Eventos y Actividades</a>
                     </li>
                     <li class="menumovil">
-                        <a href="contenido.html"><i class="fas fa-film"></i> Contenido</a>
+                        <a href="contenido.html"><span class="fas fa-film" aria-hidden="true"></span> Contenido</a>
                     </li>
                     <li class="menumovil">
-                        <a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre el festival</a>
+                        <a href="sobre.html"><span class="fas fa-info-circle" aria-hidden="true"></span> Sobre el festival</a>
                     </li>
                     <li class="menumovil">
-                        <a href="#busqueda"><i class="fas fa-search"></i> Buscar</a>
+                        <a href="#busqueda"><span class="fas fa-search" aria-hidden="true"></span> Buscar</a>
                     </li>
                 </ul>
             </div>
 
             <!-- CABECERA INDEX -->
-            <div class="cabeceraindex">
+            <div class="cabeceracontenido">
                 <div class="form-row btn-row">
                     <button type="submit" class="btn-enviar">Tarifas</button>
                 </div>
             </div>
         </header>
 
+        <main>
         <!-- SECCIÓN EVENTOS EN DIRECTO -->
-        <section class="estilo1" id="eventos">
+        <section class="estilo1" id="eventos" aria-label="Eventos en directo">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>EVENTOS EN DIRECTO</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
             <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir a la artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
                 <div class="carousel-track">
-
                     <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>LA DIRECCIÓN DE FOTOGRAFÍA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/ladirecciondefotografia.png" alt="La Dirección de Fotografía">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/ladirecciondefotografia.png" alt="Cartel del documental La Dirección de Fotografía">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -96,8 +101,8 @@
                     <article class="articulos">
                         <h3>MAKING OFF "LA NIEBLA"</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/mackingofflaniebla.png" alt="Making Off 'La Niebla'">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/mackingofflaniebla.png" alt="Cartel del documental Making Off 'La Niebla'">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -105,8 +110,8 @@
                     <article class="articulos">
                         <h3>CÓMO ELABORAR UN GUIÓN</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/comoelaborarunguion.png" alt="Cómo Elaborar un Guion">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/comoelaborarunguion.png" alt="Cartel del documental Cómo Elaborar un Guion">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -114,8 +119,8 @@
                     <article class="articulos">
                         <h3>ENTREVISTA CON ROBERTO PICAFORT</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/entrevistaconelactorrobertpicafort.png" alt="Entrevista Roberto Picafort">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/entrevistaconelactorrobertpicafort.png" alt="Cartel de la entrevista con Roberto Picafort">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
@@ -123,41 +128,43 @@
                     <article class="articulos">
                         <h3>JOSÉ MANRIQUE, DIRECTOR DE FOTOGRAFÍA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/josemanriquedirector.png" alt="Curiosidades de caminos entrelazados">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/josemanriquedirector.png" alt="Cartel del documental sobre José Manrique">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article>
-                    
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
             </div>
         </section>
 
         <!-- SECCIÓN PELÍCULAS DESTACADAS -->
-        <section class="estilo1" id="contenido">
+        <section class="estilo1" id="contenido" aria-label="Películas destacadas">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>PELÍCULAS DESTACADAS</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="contenido.html" class="ver-mas">ver +</a>
             </div>
 
             <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir a la artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
                 <div class="carousel-track peliculas-dos-filas">
-
                     <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>SUSURROS DE LA NATURALEZA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/susurrosdelanaturaleza.png" alt="Susurros de la Naturaleza">
+                            <img src="images/susurrosdelanaturaleza.png" alt="Cartel del documental Susurros de la Naturaleza">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Susurros de la Naturaleza">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
@@ -165,11 +172,11 @@
                     <article class="articulos">
                         <h3>CAMINOS ENTRELAZADOS</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/caminoentrelazados.png" alt="Caminos Entrelazados">
+                            <img src="images/caminoentrelazados.png" alt="Cartel del documental Caminos Entrelazados">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Caminos Entrelazados">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -177,11 +184,11 @@
                     <article class="articulos">
                         <h3>ECOS DE CREATIVIDAD</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/comoelaborarunguion.png" alt="Cómo Elaborar un Guion">
+                            <img src="images/comoelaborarunguion.png" alt="Cartel del documental Ecos de Creatividad">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Ecos de Creatividad">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -189,11 +196,11 @@
                     <article class="articulos">
                         <h3>LA NIEBLA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/lanieblabaterecords.png" alt="La Niebla">
+                            <img src="images/lanieblabaterecords.png" alt="Cartel del documental La Niebla">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película La Niebla">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -201,11 +208,11 @@
                     <article class="articulos">
                         <h3>EN NOMBRE DE LA JUSTICIA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/ennombredelajusticia.png" alt="En Nombre de la Justicia">
+                            <img src="images/ennombredelajusticia.png" alt="Cartel del documental En Nombre de la Justicia">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película En Nombre de la Justicia">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -213,11 +220,11 @@
                     <article class="articulos">
                         <h3>MELODÍA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/melodia.png" alt="Melodía">
+                            <img src="images/melodia.png" alt="Cartel del documental Melodía">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Melodía">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -225,11 +232,11 @@
                     <article class="articulos">
                         <h3>TEJIDO EN PRUEBAS</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/tejidoenpruebas.png" alt="Tejido en Pruebas">
+                            <img src="images/tejidoenpruebas.png" alt="Cartel del documental Tejido en Pruebas">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Tejido en Pruebas">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -237,39 +244,43 @@
                     <article class="articulos">
                         <h3>ENTRE LA GLORIA Y LA DERROTA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/entrelagloriayladerrota.png" alt="Entre la Gloria y la Derrota">
+                            <img src="images/entrelagloriayladerrota.png" alt="Cartel del documental Entre la Gloria y la Derrota">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Entre la Gloria y la Derrota">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
             </div>
         </section>
 
         <!-- SECCIÓN DE NOTICIAS -->
-        <section class="estilo1">
+        <section class="estilo1" aria-label="Noticias">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>NOTICIAS</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
             <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir a la artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
                 <div class="carousel-track">
 
                     <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>"LA NIEBLA" BATE RÉCORDS</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/lanieblabaterecords.png" alt="La Niebla Bate Récords">
+                            <img src="images/lanieblabaterecords.png" alt="Imagen representativa de la noticia 'La Niebla Bate Récords'">
                             <a href="#" class="btn-ver">+ info</a>
                         </div>
                     </article>
@@ -278,7 +289,7 @@
                     <article class="articulos">
                         <h3>10 CURIOSIDADES DE "CAMINOS ENTRELAZADOS"</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/10curiosidadesdecaminos.png" alt="Caminos Entrelazados">
+                            <img src="images/10curiosidadesdecaminos.png" alt="Imagen representativa de la noticia sobre 'Caminos Entrelazados'">
                             <a href="#" class="btn-ver">+ info</a>
                         </div>
                     </article>
@@ -287,7 +298,7 @@
                     <article class="articulos">
                         <h3>"VOCES SILENCIADAS" SE CENTRA EN LA CENSURA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/vocessilenciadassecentra.png" alt="Voces Silenciadas">
+                            <img src="images/vocessilenciadassecentra.png" alt="Imagen representativa de la noticia sobre 'Voces Silenciadas'">
                             <a href="#" class="btn-ver">+ info</a>
                         </div>
                     </article>
@@ -296,50 +307,54 @@
                     <article class="articulos">
                         <h3>EL COSTO REAL DEL CINE</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/elcostrorealdelcine.png" alt="El Costo Real del Cine">
+                            <img src="images/elcostrorealdelcine.png" alt="Imagen representativa de la noticia 'El Costo Real del Cine'">
                             <a href="#" class="btn-ver">+ info</a>
                         </div>
                     </article>  
 
                     <!-- Artículo 5 -->
                     <article class="articulos">
-                        <h3>LA HISTORIA DETRÁS NOMBRE DE LA JUSTICIA </h3>
+                        <h3>LA HISTORIA DETRÁS DE 'EN NOMBRE DE LA JUSTICIA'</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/ennombredelajusticia.png" alt="En Nombre de la Justicia">
+                            <img src="images/ennombredelajusticia.png" alt="Imagen representativa de 'En Nombre de la Justicia'">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película En Nombre de la Justicia">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
             </div>
         </section>
 
         <!-- SECCIÓN ENTREVISTAS -->
-        <section class="estilo1">
+        <section class="estilo1" aria-label="Entrevistas">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>ENTREVISTAS</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
             <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir a la artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
                 <div class="carousel-track">
 
                     <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>LUCAS BONANY, PROTAGONISTA DE "LA NIEBLA"</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/lucasbonanyprotagonista.png" alt="La Dirección de Fotografía">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/lucasbonanyprotagonista.png" alt="Imagen de Lucas Bonany, protagonista de 'La Niebla'">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -347,8 +362,8 @@
                     <article class="articulos">
                         <h3>JOSÉ MANRIQUE, DIRECTOR DE FOTOGRAFÍA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/josemanriquedirector.png" alt="Curiosidades de caminos entrelazados">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/josemanriquedirector.png" alt="Imagen de José Manrique, director de fotografía">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -356,8 +371,8 @@
                     <article class="articulos">
                         <h3>GARCILASO GARCÍA, GUIONISTA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/garcilasogarciaguionista.png" alt="Voces silenciadas nos explica la censura">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/garcilasogarciaguionista.png" alt="Imagen de Garcilaso García, guionista">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -365,8 +380,8 @@
                     <article class="articulos">
                         <h3>ABEL ORTÍZ, DIRECTOR DE "RECUERDOS DEL AYER"</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/abelortizdirector.png" alt="Conoce sobre el costo real del cine">
-                            <a href="#" class="btn-ver">ver <i class="fas fa-eye"></i></a>
+                            <img src="images/abelortizdirector.png" alt="Imagen de Abel Ortíz, director de 'Recuerdos del Ayer'">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
                         </div>
                     </article> 
 
@@ -374,205 +389,249 @@
                     <article class="articulos">
                         <h3>ENTREVISTA A OSCAR RUÍZ DE "MELODÍA"</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/melodia.png" alt="Melodía">
+                            <img src="images/melodia.png" alt="Cartel del documental Melodía">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Melodía">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
             </div>
         </section>
 
         <!-- SECCIÓN CLASIFICACIÓN ACTUAL -->
-        <section class="estilo1">
+        <section class="estilo1" aria-label="Clasificación Actual">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>CLASIFICACIÓN ACTUAL</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
             </div>
 
             <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir a la artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
                 <div class="carousel-track">
 
-            <!-- Clasificación 1 --> 
+                  <!-- Clasificación 1 --> 
                   <a href="#" class="card-link">
                     <div class="card" style="background-image: url('images/tela_clasificacion.png');">
                       <h2 class="card-title">CIENCIA Y TECNOLOGÍA</h2>
                       <div class="card-content">
-                        <div class="icon">🏆</div>
+                        <div class="icon" aria-hidden="true">🏆</div>
                         <p class="card-text">La Niebla</p>
                       </div>
                     </div>
                   </a>
 
-            <!-- Clasificación 2 -->      
-            <a href="#" class="card-link">
-            <div class="card" style="background-image: url('images/tela_clasificacion.png');">
-              <h2 class="card-title">NATURALEZA Y MEDIO AMBIENTE</h2>
-              <div class="card-content">
-                <div class="icon">🏆</div>
-                <p class="card-text">Susurros de la naturaleza</p>
-              </div>
-            </div>
-            </a>
+                  <!-- Clasificación 2 -->      
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">NATURALEZA Y MEDIO AMBIENTE</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Susurros de la naturaleza</p>
+                      </div>
+                    </div>
+                  </a>
       
-            <!-- Clasificación 3 -->
-            <a href="#" class="card-link">
-            <div class="card" style="background-image: url('images/tela_clasificacion.png');">
-              <h2 class="card-title">POLÍTICA Y SOCIEDAD</h2>
-              <div class="card-content">
-                <div class="icon">🏆</div>
-                <p class="card-text">Voces Silenciadas</p>
-              </div>
-            </div>
-             </a>
-            <!-- Clasificación 4 -->
-            <a href="#" class="card-link">
-            <div class="card" style="background-image: url('images/tela_clasificacion.png');">
-              <h2 class="card-title">CULTURA Y ARTE</h2>
-              <div class="card-content">
-                <div class="icon">🏆</div>
-                <p class="card-text">Luz entre cenizas</p>
-              </div>
-            </div>
-            </a>
+                  <!-- Clasificación 3 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">POLÍTICA Y SOCIEDAD</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Voces Silenciadas</p>
+                      </div>
+                    </div>
+                  </a>
+            
+                  <!-- Clasificación 4 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">CULTURA Y ARTE</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Luz entre cenizas</p>
+                      </div>
+                    </div>
+                  </a>
 
-            <!-- Clasificación 5 -->
-            <a href="#" class="card-link">
-            <div class="card" style="background-image: url('images/tela_clasificacion.png');">
-              <h2 class="card-title">MÚSICA Y DEPORTE</h2>
-              <div class="card-content">
-                <div class="icon">🏆</div>
-                <p class="card-text">Entre la Gloria y la Derrota</p>
-              </div>
-            </div>
-            </a>
+                  <!-- Clasificación 5 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">MÚSICA Y DEPORTE</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Entre la Gloria y la Derrota</p>
+                      </div>
+                    </div>
+                  </a>
 
-            <!-- Clasificación 6 -->
-            <a href="#" class="card-link">
-            <div class="card" style="background-image: url('images/tela_clasificacion.png');">
-              <h2 class="card-title">INVESTIGACIÓN Y CRIMEN</h2>
-              <div class="card-content">
-                <div class="icon">🏆</div>
-                <p class="card-text">En busca del conocimiento</p>
-              </div>
-            </div>
-            </a>
+                  <!-- Clasificación 6 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">INVESTIGACIÓN Y CRIMEN</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">En busca del conocimiento</p>
+                      </div>
+                    </div>
+                  </a>
 
-            <!-- Clasificación 7 -->
-            <a href="#" class="card-link">
-            <div class="card" style="background-image: url('images/tela_clasificacion.png');">
-              <h2 class="card-title">VIDAS PERSONALES Y BIOGRAFÍAS</h2>
-              <div class="card-content">
-                <div class="icon">🏆</div>
-                <p class="card-text">Recuerdos del ayer</p>
-              </div>
-            </div>
-            </a>
+                  <!-- Clasificación 7 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">VIDAS PERSONALES Y BIOGRAFÍAS</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Recuerdos del ayer</p>
+                      </div>
+                    </div>
+                  </a>
 
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
             </div>
         </section>
 
 
-<!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
-<section class="formulario">
-    <div class="lineaytitulo">
-        <span class="linea"></span>
-        <h2>FORMULARIO DE CONTACTO</h2>
-        <span class="linea"></span>
-    </div>
-
-    <div class="formulario-contacto">
-    <div class="form-container">
-        <form>
-            <div class="form-row">
-                <div class="form-group"><input type="text" id="nombre" name="nombre" placeholder="Nombre" required ></div>
-                <div class="form-group"><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required></div>
+        <!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
+        <section class="formulario" aria-label="Formulario de contacto">
+            <div class="lineaytitulo">
+                <span class="linea" aria-hidden="true"></span>
+                <h2>FORMULARIO DE CONTACTO</h2>
+                <span class="linea" aria-hidden="true"></span>
             </div>
 
-            <div class="form-row">
-                <div class="form-group"><input type="email" id="email" name="email" placeholder="Email"  required></div>
-                <div class="form-group"><input type="tel" id="telefono" name="telefono" placeholder="Teléfono" ></div>
+            <div class="formulario-contacto">
+                <div class="form-container">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre:" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidos">apellidos</label>
+                                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos:" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">email</label>
+                                <input type="email" id="email" name="email" placeholder="email:" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono:">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="mensaje">mensaje</label>
+                                <input type="text" id="mensaje" name="mensaje" placeholder="Asunto:" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="asunto">asunto</label>
+                                <textarea id="asunto" name="asunto" rows="4" placeholder="Mensaje:" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-row btn-row">
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </div>
+                    </form>
+                </div>
             </div>
+        </section>
 
-            <div class="form-row">
-                <div class="form-group full-width"><input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required></div>
+        <!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
+        <div class="partners-section" aria-label="Partners y Colaboradores">
+            <div class="partners-container">
+                <div class="partners-left">Partners:</div>
+                <div class="partners-right">Colaboradores</div>
             </div>
+        </div>
 
-            <div class="form-row"><div class="form-group full-width"><textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea></div>
+        </main>
+
+        <!-- COMIENZA EL FOOTER -->
+        <footer class="footer-container" aria-label="Información del sitio">
+            <div class="footer-links">
+                <a href="#">Noticias</a>
+                <a href="#">Notas de prensa</a>
+                <a href="#">Contacto</a>
+                <a href="#">Información legal</a>
+                <a href="#">Galería fotográfica</a>
+                <a href="#">Trabaja con nosotros</a>
+                <a href="#">Ayuda</a>
             </div>
-
-            <div class="form-row btn-row">
-                <button type="submit" class="btn-enviar">Enviar</button>
+            
+            <!-- Íconos de redes sociales -->
+            <div class="footer-social">
+                <a href="#">
+                    <span class="fab fa-instagram" aria-hidden="true"></span>
+                    <span class="visually-hidden">Instagram</span>
+                </a>
+                <a href="#">
+                    <span class="fab fa-twitter" aria-hidden="true"></span>
+                    <span class="visually-hidden">X (Twitter)</span>
+                </a>
+                <a href="#">
+                    <span class="fab fa-linkedin-in" aria-hidden="true"></span>
+                    <span class="visually-hidden">LinkedIn</span>
+                </a>
+                <a href="#">
+                    <span class="fab fa-tiktok" aria-hidden="true"></span>
+                    <span class="visually-hidden">TikTok</span>
+                </a>
+                <a href="#">
+                    <span class="fab fa-youtube" aria-hidden="true"></span>
+                    <span class="visually-hidden">YouTube</span>
+                </a>
             </div>
-        </form>
+            
+            <div class="footer-cookies">
+                <a href="#">Política de cookies</a>
+            </div>
+        </footer>
+
+        <!-- SCRIPT PARA EL CARRUSEL -->
+        <script>
+            document.querySelectorAll('.carousel-container').forEach(container => {
+                const track = container.querySelector('.carousel-track');
+                const btnLeft = container.querySelector('.left-btn');
+                const btnRight = container.querySelector('.right-btn');
+
+                // Ajusta la cantidad de scroll
+                const scrollAmount = 300;
+
+                btnLeft.addEventListener('click', () => {
+                    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                });
+
+                btnRight.addEventListener('click', () => {
+                    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                });
+            });
+        </script>
+
     </div>
-    </div>
-</section>
-
-<!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
-<div class="partners-section">
-    <div class="partners-container">
-        <div class="partners-left">Partners:</div>
-        <div class="partners-right">Colaboradores</div>
-    </div>
-</div>
-
-<!-- COMIENZA EL FOOTER -->
-<footer class="footer-container">
-    <div class="footer-links">
-        <a href="#">Noticias</a>
-        <a href="#">Notas de prensa</a>
-        <a href="#">Contacto</a>
-        <a href="#">Información legal</a>
-        <a href="#">Galería fotográfica</a>
-        <a href="#">Trabaja con nosotros</a>
-        <a href="#">Ayuda</a>
-    </div>
-    
-    <!-- Íconos de redes sociales -->
-    <div class="footer-social">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div class="footer-cookies">
-        <a href="#">Política de cookies</a>
-    </div>
-</footer>
-
-<!-- SCRIPT PARA EL CARRUSEL -->
-<script>
-    document.querySelectorAll('.carousel-container').forEach(container => {
-        const track = container.querySelector('.carousel-track');
-        const btnLeft = container.querySelector('.left-btn');
-        const btnRight = container.querySelector('.right-btn');
-
-         // Ajusta la cantidad de scroll
-        const scrollAmount = 300;
-
-        btnLeft.addEventListener('click', () => {
-            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        });
-
-        btnRight.addEventListener('click', () => {
-            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        });
-    });
-</script>
-
-</div>
 </body>
 </html>
