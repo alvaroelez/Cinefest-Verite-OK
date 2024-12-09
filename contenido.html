@@ -18,7 +18,7 @@
         <header>
             <h1>Descubre todo el contenido que te espera en Cinefest Verite</h1>
             <!-- MENÚ PRINCIPAL -->
-            <nav class="menu-principal">
+            <nav class="menu-principal" aria-label="Menú principal">
                 <ul class="menu-items">
                     <li><a href="#perfil">Mi Perfil</a></li>
                     <li><a href="#eventos">Eventos y Actividades</a></li>
@@ -27,8 +27,9 @@
                     <li><a href="sobre.html">Sobre el festival</a></li>
                     <li>
                         <div class="buscador">
-                            <input type="text" placeholder="Buscador">
-                            <button type="button" aria-label="Buscar" class="search-btn"><i class="fas fa-search" aria-hidden="true"></i></button>
+                            <label for="buscador" class="visually-hidden">Buscar</label>
+                            <input type="text" placeholder="Buscador" id="buscador" name="buscador">
+                            <button type="button" aria-label="Buscar" class="search-btn"><span class="fas fa-search" aria-hidden="true"></span></button>
                         </div>
                     </li>
                     <li><a href="#ayuda">Ayuda</a></li>
@@ -36,7 +37,7 @@
             </nav>
 
             <!-- MENÚ MÓVIL -->
-            <div class="menu-movil">
+            <div class="menu-movil" aria-label="Menú móvil">
                 <ul class="menu-movil-superior">
                     <li class="menumovil"><a href="#perfil">Mi Perfil</a></li>
                     <li class="menumovil"><a href="index.html"><img src="images/logo.png" alt="Logo CineFest Verité"></a></li>
@@ -45,16 +46,16 @@
 
                 <ul class="menu-movil-inferior">
                     <li class="menumovil">
-                        <a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos y Actividades</a>
+                        <a href="#eventos"><span class="fas fa-calendar-alt" aria-hidden="true"></span> Eventos y Actividades</a>
                     </li>
                     <li class="menumovil">
-                        <a href="contenido.html"><i class="fas fa-film"></i> Contenido</a>
+                        <a href="contenido.html"><span class="fas fa-film" aria-hidden="true"></span> Contenido</a>
                     </li>
                     <li class="menumovil">
-                        <a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre el festival</a>
+                        <a href="sobre.html"><span class="fas fa-info-circle" aria-hidden="true"></span> Sobre el festival</a>
                     </li>
                     <li class="menumovil">
-                        <a href="#busqueda"><i class="fas fa-search"></i> Buscar</a>
+                        <a href="#busqueda"><span class="fas fa-search" aria-hidden="true"></span> Buscar</a>
                     </li>
                 </ul>
             </div>
@@ -63,51 +64,50 @@
             </div>
         </header>
 
-        
+
 
         <!-- FILTRO DE PELICULAS -->
         <div class="filtro-contenidos" style="background-image: url('images/fondofiltro.png');">
             <div class="filtro-container">
                 <div class="filtro-icon-text">
-                    <i class="fas fa-bars"></i>
+                    <span class="fas fa-bars" aria-hidden="true"></span>
                     <span>Filtrar por género</span>
                 </div>
-                <form class="filtro-buscador">
-                    <input type="text" placeholder="Nombre de la película">
-                    <button type="submit" aria-label="Buscar" class="search-btn"><i class="fas fa-search" aria-hidden="true"></i></button>
+                <form class="filtro-buscador" aria-label="Filtrar películas">
+                    <label for="filtro-pelicula" class="visually-hidden">Filtrar por nombre de la película</label>
+                    <input type="text" id="filtro-pelicula" placeholder="Nombre de la película">
+                    <button type="submit" aria-label="Buscar" class="search-btn"><span class="fas fa-search" aria-hidden="true"></span></button>
                 </form>
             </div>
         </div>
 
-        
-
 
 
         <!-- SECCIÓN CIENCIA Y TECNOLOGÍA -->
-        <section class="estilo1" id="cienciaytecnología">
+        <section class="estilo1" id="cienciaytecnología" aria-label="Ciencia y Tecnología">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>CIENCIA Y TECNOLOGÍA</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
             <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><span class="fas fa-chevron-left" aria-hidden="true"></span></button>
                 <div class="carousel-track">
 
                     <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>HORIZONTE DE SICILIO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/horizontedesicilio.png" alt="Susurros de la Naturaleza">
+                            <img src="images/horizontedesicilio.png" alt="Horizonte de Sicilio">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Horizonte de Sicilio">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
@@ -115,11 +115,11 @@
                     <article class="articulos">
                         <h3>EN LOS LIMITES DEL CONOCIMIENTO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/enloslimitesdelconocimiento.png" alt="Caminos Entrelazados">
+                            <img src="images/enloslimitesdelconocimiento.png" alt="En los límites del conocimiento">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir En los Límites del Conocimiento">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -127,11 +127,11 @@
                     <article class="articulos">
                         <h3>GUARDIANES DE LA TIERRA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/guardianesdelatierra.png" alt="Cómo Elaborar un Guion">
+                            <img src="images/guardianesdelatierra.png" alt="Guardianes de la Tierra">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Guardianes de la Tierra">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -139,11 +139,11 @@
                     <article class="articulos">
                         <h3>MENTES SINTÉTICAS</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/mentessinteticas.png" alt="La Niebla">
+                            <img src="images/mentessinteticas.png" alt="Mentes Sintéticas">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Mentes Sintéticas">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -151,11 +151,11 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <img src="images/incluirpelicula.png" alt="Póster de película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -163,35 +163,34 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <img src="images/incluirpelicula.png" alt="Póster de otra película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
                     
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><span class="fas fa-chevron-right" aria-hidden="true"></span></button>
             </div>
         </section>
 
 
 
         <!-- SECCIÓN NATURALEZA Y MEDIO AMBIENTE -->
-        <section class="estilo1" id="naturalezaymedioambiente">
+        <section class="estilo1" id="naturalezaymedioambiente" aria-label="Naturaleza y Medio Ambiente">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
-                    <h2>CIENCIA Y TECNOLOGÍA</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
+                    <h2>NATURALEZA Y MEDIO AMBIENTE</h2>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
-            <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><span class="fas fa-chevron-left" aria-hidden="true"></span></button>
                 <div class="carousel-track peliculas-dos-filas">
 
                      <!-- Artículo 1 -->
@@ -200,9 +199,9 @@
                         <div class="contenedor-imagen">
                             <img src="images/susurrosdelanaturaleza.png" alt="Susurros de la Naturaleza">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Susurros de la Naturaleza">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
@@ -210,11 +209,11 @@
                     <article class="articulos">
                         <h3>CUMBRES ETERNAS</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/cumbreseternas.png" alt="Caminos Entrelazados">
+                            <img src="images/cumbreseternas.png" alt="Cumbres Eternas">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Cumbres Eternas">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -222,11 +221,11 @@
                     <article class="articulos">
                         <h3>OCEANOS MUDOS</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/oceanosmudos.png" alt="Cómo Elaborar un Guion">
+                            <img src="images/oceanosmudos.png" alt="Océanos Mudos">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Océanos Mudos">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -234,11 +233,11 @@
                     <article class="articulos">
                         <h3>HUELLAS DE PLÁSTICO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/huellasdeplastico.png" alt="La Niebla">
+                            <img src="images/huellasdeplastico.png" alt="Huellas de Plástico">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Huellas de Plástico">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -246,11 +245,11 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <img src="images/incluirpelicula.png" alt="Póster de película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -258,46 +257,44 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <img src="images/incluirpelicula.png" alt="Póster de otra película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
                     
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><span class="fas fa-chevron-right" aria-hidden="true"></span></button>
             </div>
         </section>
         
 
-
         <!-- SECCIÓN POLÍTICA Y SOCIEDAD -->
-        <section class="estilo1" id="politicaysociedad">
+        <section class="estilo1" id="politicaysociedad" aria-label="Política y Sociedad">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>POLÍTICA Y SOCIEDAD</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
-            <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior"><span class="fas fa-chevron-left" aria-hidden="true"></span></button>
                 <div class="carousel-track peliculas-dos-filas">
 
                      <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>VOCES DEL PUEBLO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/vocesdelpueblo.png" alt="Susurros de la Naturaleza">
+                            <img src="images/vocesdelpueblo.png" alt="Voces del Pueblo">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Voces del Pueblo">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
@@ -305,11 +302,11 @@
                     <article class="articulos">
                         <h3>EL ARTE DE GOBERNAR</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/elartedegobernar.png" alt="Caminos Entrelazados">
+                            <img src="images/elartedegobernar.png" alt="El Arte de Gobernar">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir El Arte de Gobernar">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -317,11 +314,11 @@
                     <article class="articulos">
                         <h3>TEJIDO HUMANO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/tejidohumano.png" alt="Cómo Elaborar un Guion">
+                            <img src="images/tejidohumano.png" alt="Tejido Humano">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Tejido Humano">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -329,11 +326,11 @@
                     <article class="articulos">
                         <h3>ROSTROS DE LA CIUDAD</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/rostrosdelaciudad.png" alt="La Niebla">
+                            <img src="images/rostrosdelaciudad.png" alt="Rostros de la Ciudad">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Rostros de la Ciudad">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -341,11 +338,11 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <img src="images/incluirpelicula.png" alt="Póster de película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -353,139 +350,137 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <img src="images/incluirpelicula.png" alt="Póster de otra película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
                     
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><span class="fas fa-chevron-right" aria-hidden="true"></span></button>
             </div>
         </section>
 
 
-                <!-- SECCIÓN CULTURA Y ARTE -->
-                <section class="estilo1" id="culturayarte">
-                    <div class="titulo-con-lineas">
-                        <div class="lineaytitulo">
-                            <span class="linea"></span>
-                            <h2>CULTURA Y ARTE</h2>
-                            <span class="linea"></span>
+        <!-- SECCIÓN CULTURA Y ARTE -->
+        <section class="estilo1" id="culturayarte" aria-label="Cultura y Arte">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea" aria-hidden="true"></span>
+                    <h2>CULTURA Y ARTE</h2>
+                    <span class="linea" aria-hidden="true"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+    
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><span class="fas fa-chevron-left" aria-hidden="true"></span></button>
+                <div class="carousel-track peliculas-dos-filas">
+    
+                     <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>COLORES DEL ALMA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/coloresdelalma.png" alt="Colores del Alma">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Colores del Alma">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
-                        <a href="#" class="ver-mas">ver +</a>
-                    </div>
-        
-                    <!-- Container que engloba el carrusel --> 
-                    <div class="carousel-container">
-                        <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
-                        <div class="carousel-track peliculas-dos-filas">
-        
-                             <!-- Artículo 1 -->
-                            <article class="articulos">
-                                <h3>COLORES DEL ALMA</h3>
-                                <div class="contenedor-imagen">
-                                    <img src="images/coloresdelalma.png" alt="Susurros de la Naturaleza">
-                                    <a href="ficha.html" class="icono-play">
-                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
-                                    </a>
-                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
-                                </div>
-                            </article>
-        
-                            <!-- Artículo 2 -->
-                            <article class="articulos">
-                                <h3>RAICES QUE CANTAN</h3>
-                                <div class="contenedor-imagen">
-                                    <img src="images/raicesquecantan.png" alt="Caminos Entrelazados">
-                                    <a href="ficha.html" class="icono-play">
-                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
-                                    </a>
-                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
-                                </div>
-                            </article>
-                    
-                            <!-- Artículo 3 -->
-                            <article class="articulos">
-                                <h3>MANOS CREATIVAS</h3>
-                                <div class="contenedor-imagen">
-                                    <img src="images/manoscreativas.png" alt="Cómo Elaborar un Guion">
-                                    <a href="ficha.html" class="icono-play">
-                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
-                                    </a>
-                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
-                                </div>
-                            </article>
-                    
-                            <!-- Artículo 4 -->
-                            <article class="articulos">
-                                <h3>BELLEZA OCULTA</h3>
-                                <div class="contenedor-imagen">
-                                    <img src="images/bellezaoculta.png" alt="La Niebla">
-                                    <a href="ficha.html" class="icono-play">
-                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
-                                    </a>
-                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
-                                </div>
-                            </article>
-                
-                            <!-- Artículo 5 -->
-                            <article class="articulos">
-                                <h3>INCLUIR PELÍCULA</h3>
-                                <div class="contenedor-imagen">
-                                    <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
-                                    <a href="ficha.html" class="icono-play">
-                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
-                                    </a>
-                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
-                                </div>
-                            </article>
-                
-                            <!-- Artículo 6 -->
-                            <article class="articulos">
-                                <h3>INCLUIR PELÍCULA</h3>
-                                <div class="contenedor-imagen">
-                                    <img src="images/incluirpelicula.png" alt="Melodía">
-                                    <a href="ficha.html" class="icono-play">
-                                        <img src="images/mingcute_play-fill.png" alt="Reproducir">
-                                    </a>
-                                    <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
-                                </div>
-                            </article>
-                            
+                    </article>
+    
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>RAICES QUE CANTAN</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/raicesquecantan.png" alt="Raíces que Cantan">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Raíces que Cantan">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
-                        <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                </section>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>MANOS CREATIVAS</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/manoscreativas.png" alt="Manos Creativas">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Manos Creativas">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>BELLEZA OCULTA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/bellezaoculta.png" alt="Belleza Oculta">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Belleza Oculta">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+    
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="Póster de película sin título">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+    
+                    <!-- Artículo 6 -->
+                    <article class="articulos">
+                        <h3>INCLUIR PELÍCULA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/incluirpelicula.png" alt="Póster de otra película sin título">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+                    
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><span class="fas fa-chevron-right" aria-hidden="true"></span></button>
+            </div>
+        </section>
 
 
         <!-- SECCIÓN MÚSICA Y DEPORTE -->
-        <section class="estilo1" id="musicaydeporte">
+        <section class="estilo1" id="musicaydeporte" aria-label="Música y Deporte">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
-                    <h2>POLÍTICA Y SOCIEDAD</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
+                    <h2>MÚSICA Y DEPORTE</h2>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
-            <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><span class="fas fa-chevron-left" aria-hidden="true"></span></button>
                 <div class="carousel-track peliculas-dos-filas">
 
                      <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>MELODÍAS ENTRE ASFALTO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/melodiasentreasfalto.png" alt="Susurros de la Naturaleza">
+                            <img src="images/melodiasentreasfalto.png" alt="Melodías entre Asfalto">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Melodías entre Asfalto">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
@@ -493,11 +488,11 @@
                     <article class="articulos">
                         <h3>CORAZONES EN JUEGO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/corazonesenjuego.png" alt="Caminos Entrelazados">
+                            <img src="images/corazonesenjuego.png" alt="Corazones en Juego">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Corazones en Juego">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -505,11 +500,11 @@
                     <article class="articulos">
                         <h3>ECOS DE CREATIVIDAD</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/ecosdecreatividad.png" alt="Cómo Elaborar un Guion">
+                            <img src="images/ecosdecreatividad.png" alt="Ecos de Creatividad">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Ecos de Creatividad">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -517,11 +512,11 @@
                     <article class="articulos">
                         <h3>GOLPE PERFECTO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/golpeperfecto.png" alt="La Niebla">
+                            <img src="images/golpeperfecto.png" alt="Golpe Perfecto">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Golpe Perfecto">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -529,11 +524,11 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <img src="images/incluirpelicula.png" alt="Póster de película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -541,45 +536,44 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <img src="images/incluirpelicula.png" alt="Póster de otra película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
                     
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><span class="fas fa-chevron-right" aria-hidden="true"></span></button>
             </div>
         </section>
 
 
         <!-- SECCIÓN INVESTIGACIÓN Y CRIMEN -->
-        <section class="estilo1" id="investigaciónycrimen">
+        <section class="estilo1" id="investigaciónycrimen" aria-label="Investigación y Crimen">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>INVESTIGACIÓN Y CRIMEN</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
-            <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><span class="fas fa-chevron-left" aria-hidden="true"></span></button>
                 <div class="carousel-track peliculas-dos-filas">
 
                      <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>EN BUSCA DEL CONOCIMIENTO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/enbuscadelconocimiento.png" alt="Susurros de la Naturaleza">
+                            <img src="images/enbuscadelconocimiento.png" alt="En Busca del Conocimiento">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir En Busca del Conocimiento">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
@@ -587,11 +581,11 @@
                     <article class="articulos">
                         <h3>HUELLAS EN SILENCIO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/huellasensilencio.png" alt="Caminos Entrelazados">
+                            <img src="images/huellasensilencio.png" alt="Huellas en Silencio">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Huellas en Silencio">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -599,11 +593,11 @@
                     <article class="articulos">
                         <h3>TEJIDO EN PRUEBAS</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/tejidoenpruebas.png" alt="Cómo Elaborar un Guion">
+                            <img src="images/tejidoenpruebas.png" alt="Tejido en Pruebas">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Tejido en Pruebas">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -611,11 +605,11 @@
                     <article class="articulos">
                         <h3>EN NOMBRE DE LA JUSTICIA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/ennombredelajusticia.png" alt="La Niebla">
+                            <img src="images/ennombredelajusticia.png" alt="En Nombre de la Justicia">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir En Nombre de la Justicia">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -623,11 +617,11 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <img src="images/incluirpelicula.png" alt="Póster de película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -635,45 +629,44 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <img src="images/incluirpelicula.png" alt="Póster de otra película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
                     
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><span class="fas fa-chevron-right" aria-hidden="true"></span></button>
             </div>
         </section>
 
 
         <!-- SECCIÓN VIDAS PERSONALES Y BIOGRAFÍA -->
-        <section class="estilo1" id="vidaspersonalesybiografia">
+        <section class="estilo1" id="vidaspersonalesybiografia" aria-label="Vidas Personales y Biografía">
             <div class="titulo-con-lineas">
                 <div class="lineaytitulo">
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                     <h2>VIDAS PERSONALES Y BIOGRAFÍA</h2>
-                    <span class="linea"></span>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
                 <a href="#" class="ver-mas">ver +</a>
             </div>
 
-            <!-- Container que engloba el carrusel --> 
             <div class="carousel-container">
-                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><i class="fas fa-chevron-left" aria-hidden="true"></i></button>
+                <button class="carousel-btn left-btn" aria-label="Ir a la diapositiva anterior"><span class="fas fa-chevron-left" aria-hidden="true"></span></button>
                 <div class="carousel-track peliculas-dos-filas">
 
                      <!-- Artículo 1 -->
                     <article class="articulos">
                         <h3>LAZOS INVISIBLES</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/lazosinvisibles.png" alt="Susurros de la Naturaleza">
+                            <img src="images/lazosinvisibles.png" alt="Lazos Invisibles">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Lazos Invisibles">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
 
@@ -681,11 +674,11 @@
                     <article class="articulos">
                         <h3>PÁGINAS DE UNA VIDA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/paginasdeunavida.png" alt="Caminos Entrelazados">
+                            <img src="images/paginasdeunavida.png" alt="Páginas de una Vida">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Páginas de una Vida">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -693,11 +686,11 @@
                     <article class="articulos">
                         <h3>ENTRE EL VACÍO Y LA MENTE</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/entreelvacioylamente.png" alt="Cómo Elaborar un Guion">
+                            <img src="images/entreelvacioylamente.png" alt="Entre el Vacío y la Mente">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Entre el Vacío y la Mente">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
             
@@ -705,11 +698,11 @@
                     <article class="articulos">
                         <h3>TRAS LAS HUELLAS DEL PASADO</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/traslashuellasdelpasado.png" alt="La Niebla">
+                            <img src="images/traslashuellasdelpasado.png" alt="Tras las Huellas del Pasado">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir Tras las Huellas del Pasado">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -717,11 +710,11 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="En Nombre de la Justicia">
+                            <img src="images/incluirpelicula.png" alt="Póster de película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
         
@@ -729,111 +722,111 @@
                     <article class="articulos">
                         <h3>INCLUIR PELÍCULA</h3>
                         <div class="contenedor-imagen">
-                            <img src="images/incluirpelicula.png" alt="Melodía">
+                            <img src="images/incluirpelicula.png" alt="Póster de otra película sin título">
                             <a href="ficha.html" class="icono-play">
-                                <img src="images/mingcute_play-fill.png" alt="Reproducir">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir esta película">
                             </a>
-                            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
                         </div>
                     </article>
                     
                 </div>
-                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><i class="fas fa-chevron-right"></i></button>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente"><span class="fas fa-chevron-right" aria-hidden="true"></span></button>
 
             </div>
         </section>
 
 
 
-<!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
-<section class="formulario">
-    <div class="lineaytitulo">
-        <span class="linea"></span>
-        <h2>FORMULARIO DE CONTACTO</h2>
-        <span class="linea"></span>
-    </div>
-
-    <div class="formulario-contacto">
-    <div class="form-container">
-        <form>
-            <div class="form-row">
-                <div class="form-group"><input type="text" id="nombre" name="nombre" placeholder="Nombre" required ></div>
-                <div class="form-group"><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required></div>
+        <!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
+        <section class="formulario" aria-label="Formulario de contacto">
+            <div class="lineaytitulo">
+                <span class="linea" aria-hidden="true"></span>
+                <h2>FORMULARIO DE CONTACTO</h2>
+                <span class="linea" aria-hidden="true"></span>
             </div>
 
-            <div class="form-row">
-                <div class="form-group"><input type="email" id="email" name="email" placeholder="Email"  required></div>
-                <div class="form-group"><input type="tel" id="telefono" name="telefono" placeholder="Teléfono" ></div>
+            <div class="formulario-contacto">
+            <div class="form-container">
+                <form>
+                    <div class="form-row">
+                        <div class="form-group"><label for="nombre" class="visually-hidden">Nombre</label><input type="text" id="nombre" name="nombre" placeholder="Nombre" required ></div>
+                        <div class="form-group"><label for="apellidos" class="visually-hidden">Apellidos</label><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group"><label for="email" class="visually-hidden">Email</label><input type="email" id="email" name="email" placeholder="Email"  required></div>
+                        <div class="form-group"><label for="telefono" class="visually-hidden">Teléfono</label><input type="tel" id="telefono" name="telefono" placeholder="Teléfono" ></div>
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group full-width"><label for="mensaje" class="visually-hidden">Mensaje</label><input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required></div>
+                    </div>
+
+                    <div class="form-row"><div class="form-group full-width"><label for="asunto" class="visually-hidden">Asunto</label><textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea></div>
+                    </div>
+
+                    <div class="form-row btn-row">
+                        <button type="submit" class="btn-enviar">Enviar</button>
+                    </div>
+                </form>
             </div>
-
-            <div class="form-row">
-                <div class="form-group full-width"><input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required></div>
             </div>
+        </section>
 
-            <div class="form-row"><div class="form-group full-width"><textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea></div>
+        <!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
+        <div class="partners-section" aria-label="Partners y Colaboradores">
+            <div class="partners-container">
+                <div class="partners-left">Partners:</div>
+                <div class="partners-right">Colaboradores</div>
             </div>
+        </div>
 
-            <div class="form-row btn-row">
-                <button type="submit" class="btn-enviar">Enviar</button>
+        <!-- COMIENZA EL FOOTER -->
+        <footer class="footer-container" aria-label="Información del sitio">
+            <div class="footer-links">
+                <a href="#">Noticias</a>
+                <a href="#">Notas de prensa</a>
+                <a href="#">Contacto</a>
+                <a href="#">Información legal</a>
+                <a href="#">Galería fotográfica</a>
+                <a href="#">Trabaja con nosotros</a>
+                <a href="#">Ayuda</a>
             </div>
-        </form>
+            
+            <!-- Íconos de redes sociales -->
+            <div class="footer-social">
+                <a href="#" aria-label="Instagram"><span class="fab fa-instagram" aria-hidden="true"></span><span class="visually-hidden">Instagram</span></a>
+                <a href="#" aria-label="X (Twitter)"><span class="fab fa-twitter" aria-hidden="true"></span><span class="visually-hidden">X (Twitter)</span></a>
+                <a href="#" aria-label="LinkedIn"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="visually-hidden">LinkedIn</span></a>
+                <a href="#" aria-label="TikTok"><span class="fab fa-tiktok" aria-hidden="true"></span><span class="visually-hidden">TikTok</span></a>
+                <a href="#" aria-label="YouTube"><span class="fab fa-youtube" aria-hidden="true"></span><span class="visually-hidden">YouTube</span></a>
+            </div>
+            <div class="footer-cookies">
+                <a href="#">Política de cookies</a>
+            </div>
+        </footer>
+
+        <!-- SCRIPT PARA EL CARRUSEL -->
+        <script>
+            document.querySelectorAll('.carousel-container').forEach(container => {
+                const track = container.querySelector('.carousel-track');
+                const btnLeft = container.querySelector('.left-btn');
+                const btnRight = container.querySelector('.right-btn');
+
+                // Ajusta la cantidad de scroll
+                const scrollAmount = 300;
+
+                btnLeft.addEventListener('click', () => {
+                    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                });
+
+                btnRight.addEventListener('click', () => {
+                    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                });
+            });
+        </script>
+
     </div>
-    </div>
-</section>
-
-<!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
-<div class="partners-section">
-    <div class="partners-container">
-        <div class="partners-left">Partners:</div>
-        <div class="partners-right">Colaboradores</div>
-    </div>
-</div>
-
-<!-- COMIENZA EL FOOTER -->
-<footer class="footer-container">
-    <div class="footer-links">
-        <a href="#">Noticias</a>
-        <a href="#">Notas de prensa</a>
-        <a href="#">Contacto</a>
-        <a href="#">Información legal</a>
-        <a href="#">Galería fotográfica</a>
-        <a href="#">Trabaja con nosotros</a>
-        <a href="#">Ayuda</a>
-    </div>
-    
-    <!-- Íconos de redes sociales -->
-    <div class="footer-social">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
-    </div>
-    <div class="footer-cookies">
-        <a href="#">Política de cookies</a>
-    </div>
-</footer>
-
-<!-- SCRIPT PARA EL CARRUSEL -->
-<script>
-    document.querySelectorAll('.carousel-container').forEach(container => {
-        const track = container.querySelector('.carousel-track');
-        const btnLeft = container.querySelector('.left-btn');
-        const btnRight = container.querySelector('.right-btn');
-
-         // Ajusta la cantidad de scroll
-        const scrollAmount = 300;
-
-        btnLeft.addEventListener('click', () => {
-            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        });
-
-        btnRight.addEventListener('click', () => {
-            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        });
-    });
-</script>
-
-</div>
 </body>
 </html>
