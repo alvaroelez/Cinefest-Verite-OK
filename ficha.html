@@ -18,17 +18,22 @@
         <header>
             <h1>Ficha de la película</h1>
             <!-- MENÚ PRINCIPAL -->
-            <nav class="menu-principal">
+            <nav class="menu-principal" aria-label="Menú principal">
                 <ul class="menu-items">
                     <li><a href="#perfil">Mi Perfil</a></li>
                     <li><a href="#eventos">Eventos y Actividades</a></li>
                     <li><a href="contenido.html">Contenido</a></li>
-                    <li class="logo"><a href="index.html"><img src="images/logo.png" alt="Logo CineFest Verité">CineFest Verité</a></li>
+                    <li class="logo">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Logo CineFest Verité"> CineFest Verité
+                        </a>
+                    </li>
                     <li><a href="sobre.html">Sobre el festival</a></li>
                     <li>
                         <div class="buscador">
-                            <input type="text" placeholder="Buscador">
-                            <button type="button" aria-label="Buscar" class="search-btn"><i class="fas fa-search" aria-hidden="true"></i></button>
+                            <label for="buscador" class="visually-hidden">Buscar</label>
+                            <input type="text" id="buscador" name="buscador" placeholder="Buscador">
+                            <button type="button" aria-label="Buscar"><span class="fas fa-search" aria-hidden="true"></span></button>
                         </div>
                     </li>
                     <li><a href="#ayuda">Ayuda</a></li>
@@ -36,25 +41,41 @@
             </nav>
 
             <!-- MENÚ MÓVIL -->
-            <div class="menu-movil">
+            <div class="menu-movil" aria-label="Menú móvil">
                 <ul class="menu-movil-superior">
                     <li class="menumovil"><a href="#perfil">Mi Perfil</a></li>
-                    <li class="menumovil"><a href="index.html"><img src="images/logo.png" alt="Logo CineFest Verité"></a></li>
+                    <li class="menumovil">
+                        <a href="index.html">
+                            <img src="images/logo.png" alt="Logo CineFest Verité">
+                        </a>
+                    </li>
                     <li class="menumovil"><a href="#ayuda">Ayuda</a></li>
                 </ul>
 
                 <ul class="menu-movil-inferior">
                     <li class="menumovil">
-                        <a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos y Actividades</a>
+                        <a href="#eventos">
+                            <span class="fas fa-calendar-alt" aria-hidden="true"></span>
+                            <span class="visually-hidden">Eventos y Actividades</span> Eventos y Actividades
+                        </a>
                     </li>
                     <li class="menumovil">
-                        <a href="contenido.html"><i class="fas fa-film"></i> Contenido</a>
+                        <a href="contenido.html">
+                            <span class="fas fa-film" aria-hidden="true"></span>
+                            <span class="visually-hidden">Contenido</span> Contenido
+                        </a>
                     </li>
                     <li class="menumovil">
-                        <a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre el festival</a>
+                        <a href="sobre.html">
+                            <span class="fas fa-info-circle" aria-hidden="true"></span>
+                            <span class="visually-hidden">Sobre el festival</span> Sobre el festival
+                        </a>
                     </li>
                     <li class="menumovil">
-                        <a href="#busqueda"><i class="fas fa-search"></i> Buscar</a>
+                        <a href="#busqueda">
+                            <span class="fas fa-search" aria-hidden="true"></span>
+                            <span class="visually-hidden">Buscar</span> Buscar
+                        </a>
                     </li>
                 </ul>
             </div>
@@ -64,17 +85,17 @@
             <a href="#" class="icono-play">
                 <img src="images/mingcute_play-fill.png" alt="Reproducir">
             </a>
-            <a href="#" class="btn-ver">trailer <i class="fas fa-play"></i></a>
+            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
           </div>
           </header>
 
 
 <!-- SECCIÓN FICHA DE PELICULA -->
-<section class="seccion-fondo">
+<section class="seccion-fondo" aria-label="Ficha de la película 'En Nombre de la Justicia'">
         <div class="lineaytitulo">
-        <span class="lineablanca"></span>
+        <span class="lineablanca" aria-hidden="true"></span>
         <h2>EN NOMBRE DE LA JUSTICIA</h2>
-        <span class="lineablanca"></span>
+        <span class="lineablanca" aria-hidden="true"></span>
     </div>
     <div class="contenido-seccion">
     <div class="gridficha">
@@ -96,55 +117,54 @@
 
 
 <!-- SECCIÓN DEL REPARTO -->
-<section class="sobre-festival">
+<section class="sobre-festival" aria-label="Reparto de la película 'En Nombre de la Justicia'">
     <div class="titulo-con-lineas">
         <div class="lineaytitulo">
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
             <h2>REPARTO</h2>
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
         </div>
     </div>
     <div class="contenido-equipo">
         <article class="miembro-equipo">
-            <img src="images/persona1.png" alt="Foto del equipo" class="foto-equipo">
+            <img src="images/persona1.png" alt="Marina Treviño" class="foto-equipo">
             <div class="info-equipo">
                 <h3>MARINA TREVIÑO - COMO LUCÍA TORRES</h3>
                 <p>Una abogada idealista que se enfrenta a su caso más desafiante, obligándola a cuestionar su fe en el sistema que una vez defendió con pasión.</p>
             </div>
         </article>
         <article class="miembro-equipo">
-            <img src="images/persona2.png" alt="Foto del equipo" class="foto-equipo">
+            <img src="images/persona2.png" alt="Javier López" class="foto-equipo">
             <div class="info-equipo">
                 <h3>JAVIER LÓPEZ - COMO MIGUEL SANTORO</h3>
                 <p>Un veterano fiscal de distrito con una intachable trayectoria pública, pero con oscuros vínculos detrás de su reputación.</p>
             </div>
         </article>
         <article class="miembro-equipo">
-            <img src="images/persona3.png" alt="Foto del equipo" class="foto-equipo">
+            <img src="images/persona3.png" alt="Gael Rodríguez" class="foto-equipo">
             <div class="info-equipo">
                 <h3>GAEL RODRÍGUEZ - COMO ADRIÁN VELASCO</h3>
                 <p>El acusado de asesinato que mantiene su inocencia; su vida depende de que Lucía logre exponer la verdad.</p>
             </div>
         </article>
         <article class="miembro-equipo">
-            <img src="images/persona4.png" alt="Foto del equipo" class="foto-equipo">
+            <img src="images/persona4.png" alt="Manolo García" class="foto-equipo">
             <div class="info-equipo">
                 <h3>MANOLO GARCÍA - COMO CARLOS BERNAL</h3>
                 <p>Ex compañero de Lucía y un ambicioso abogado defensor que busca proteger su reputación y su futuro, a cualquier costo.</p>
             </div>
         </article>
     </div>
-    </section>
+</section>
    
 
 <!-- SECCIÓN EL EQUIPO -->
-<section class="sobre-festival">
-
+<section class="sobre-festival" aria-label="Equipo de producción y dirección de la película">
     <div class="titulo-con-lineas">
         <div class="lineaytitulo">
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
             <h2>EL EQUIPO</h2>
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -158,38 +178,57 @@
 
         <div>
         <p><b>ALEJANDRO GONZÁLEZ</b> - DIRECCIÓN</p>
-        <p><b>GUILLERMO ARRIAGA -GUIÓN</b> - </p>
+        <p><b>GUILLERMO ARRIAGA</b> - GUION</p>
         </div>
 
     </div>
 </section>
 
 <!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
-<section class="formulario">
+<section class="formulario" aria-label="Formulario de contacto">
     <div class="lineaytitulo">
-        <span class="linea"></span>
+        <span class="linea" aria-hidden="true"></span>
         <h2>FORMULARIO DE CONTACTO</h2>
-        <span class="linea"></span>
+        <span class="linea" aria-hidden="true"></span>
     </div>
 
     <div class="formulario-contacto">
     <div class="form-container">
         <form>
             <div class="form-row">
-                <div class="form-group"><input type="text" id="nombre" name="nombre" placeholder="Nombre" required ></div>
-                <div class="form-group"><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required></div>
+                <div class="form-group">
+                    <label for="nombre" class="visually-hidden">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required >
+                </div>
+                <div class="form-group">
+                    <label for="apellidos" class="visually-hidden">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required>
+                </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group"><input type="email" id="email" name="email" placeholder="Email"  required></div>
-                <div class="form-group"><input type="tel" id="telefono" name="telefono" placeholder="Teléfono" ></div>
+                <div class="form-group">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email"  required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono" class="visually-hidden">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" >
+                </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group full-width"><input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required></div>
+                <div class="form-group full-width">
+                    <label for="mensaje" class="visually-hidden">Mensaje</label>
+                    <input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required>
+                </div>
             </div>
 
-            <div class="form-row"><div class="form-group full-width"><textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea></div>
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="asunto" class="visually-hidden">Asunto</label>
+                    <textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea>
+                </div>
             </div>
 
             <div class="form-row btn-row">
@@ -201,7 +240,7 @@
 </section>
 
 <!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
-<div class="partners-section">
+<div class="partners-section" aria-label="Partners y Colaboradores">
     <div class="partners-container">
         <div class="partners-left">Partners:</div>
         <div class="partners-right">Colaboradores</div>
@@ -209,7 +248,7 @@
 </div>
 
 <!-- COMIENZA EL FOOTER -->
-<footer class="footer-container">
+<footer class="footer-container" aria-label="Información del sitio">
     <div class="footer-links">
         <a href="#">Noticias</a>
         <a href="#">Notas de prensa</a>
@@ -222,11 +261,26 @@
     
     <!-- Íconos de redes sociales -->
     <div class="footer-social">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram">
+            <span class="fab fa-instagram" aria-hidden="true"></span>
+            <span class="visually-hidden">Instagram</span>
+        </a>
+        <a href="#" aria-label="X (Twitter)">
+            <span class="fab fa-twitter" aria-hidden="true"></span>
+            <span class="visually-hidden">X (Twitter)</span>
+        </a>
+        <a href="#" aria-label="LinkedIn">
+            <span class="fab fa-linkedin-in" aria-hidden="true"></span>
+            <span class="visually-hidden">LinkedIn</span>
+        </a>
+        <a href="#" aria-label="TikTok">
+            <span class="fab fa-tiktok" aria-hidden="true"></span>
+            <span class="visually-hidden">TikTok</span>
+        </a>
+        <a href="#" aria-label="YouTube">
+            <span class="fab fa-youtube" aria-hidden="true"></span>
+            <span class="visually-hidden">YouTube</span>
+        </a>
     </div>
     <div class="footer-cookies">
         <a href="#">Política de cookies</a>
