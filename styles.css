@@ -27,10 +27,6 @@ h1 {
     display: none;
 }
 
-label {
-display: none;
-}
-
 
 /* MENÚ PRINCIPAL */
 .menu-principal {
@@ -116,6 +112,7 @@ display: none;
     flex-direction: column;
     padding: 0px;
     margin: 0px;
+    gap: 20px;
 }
 
 /* menu movil superior */
@@ -130,12 +127,14 @@ display: none;
     margin: 0px;
 }
 
+
 .menu-movil-superior a {
     color: #fff;
     text-decoration: none;
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
+    gap: 80px;
 }
 
 .menu-movil-inferior {
@@ -152,6 +151,7 @@ display: none;
     margin: 0px;
     z-index: 1000;
     align-items: center;
+    text-decoration: none;
 }
 
 .menu-movil-inferior a {
@@ -160,19 +160,14 @@ display: none;
     font-size: 1.1rem;
     font-weight: bold;
     text-align: center;
+    text-decoration: none;
 }
 
 /* menu movil inferior */
-.menu-movil-inferior a i {
+.menu-movil-inferior span {
     display: block;
     font-size: 1.1rem;
-    margin-bottom: 0px;
-}
-
-/* iconos del menu movil */
-.menu-movil-inferior a:last-child i {
-    font-size: 1.1rem;
-    color: #ffffff;
+    margin-bottom: 5px;
 }
 
 
@@ -1212,7 +1207,7 @@ color: #ffffff;
 
     /* Menú móvil */
     .menu-movil-superior, .menu-movil a {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 0px 0px;
     }
 
@@ -1245,7 +1240,7 @@ color: #ffffff;
     }
 
     .btn-enviar {
-        font-size: 1.1rem;
+        font-size: 1rem;
         padding: 6px 15px;
     }
 
@@ -1355,3 +1350,6 @@ color: #ffffff;
     }
 }
 
+label {
+    display: none;
+    }
