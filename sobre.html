@@ -18,7 +18,7 @@
         <header>
             <h1>Descubre la historia de Cinefest Verite</h1>
             <!-- MENÚ PRINCIPAL -->
-            <nav class="menu-principal">
+            <nav class="menu-principal" aria-label="Menú principal">
                 <ul class="menu-items">
                     <li><a href="#perfil">Mi Perfil</a></li>
                     <li><a href="#eventos">Eventos y Actividades</a></li>
@@ -27,8 +27,9 @@
                     <li><a href="sobre.html">Sobre el festival</a></li>
                     <li>
                         <div class="buscador">
-                            <input type="text" placeholder="Buscador">
-                            <button><i class="fas fa-search"></i></button>
+                            <label for="buscador" class="visually-hidden">Buscar</label>
+                            <input type="text" placeholder="Buscador" id="buscador" name="buscador">
+                            <button type="button" aria-label="Buscar"><span class="fas fa-search" aria-hidden="true"></span></button>
                         </div>
                     </li>
                     <li><a href="#ayuda">Ayuda</a></li>
@@ -36,7 +37,7 @@
             </nav>
 
             <!-- MENÚ MÓVIL -->
-            <div class="menu-movil">
+            <div class="menu-movil" aria-label="Menú móvil">
                 <ul class="menu-movil-superior">
                     <li class="menumovil"><a href="#perfil">Mi Perfil</a></li>
                     <li class="menumovil"><a href="index.html"><img src="images/logo.png" alt="Logo CineFest Verité"></a></li>
@@ -45,16 +46,16 @@
 
                 <ul class="menu-movil-inferior">
                     <li class="menumovil">
-                        <a href="#eventos"><i class="fas fa-calendar-alt"></i> Eventos y Actividades</a>
+                        <a href="#eventos"><span class="fas fa-calendar-alt" aria-hidden="true"></span> Eventos y Actividades</a>
                     </li>
                     <li class="menumovil">
-                        <a href="contenido.html"><i class="fas fa-film"></i> Contenido</a>
+                        <a href="contenido.html"><span class="fas fa-film" aria-hidden="true"></span> Contenido</a>
                     </li>
                     <li class="menumovil">
-                        <a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre el festival</a>
+                        <a href="sobre.html"><span class="fas fa-info-circle" aria-hidden="true"></span> Sobre el festival</a>
                     </li>
                     <li class="menumovil">
-                        <a href="#busqueda"><i class="fas fa-search"></i> Buscar</a>
+                        <a href="#busqueda"><span class="fas fa-search" aria-hidden="true"></span> Buscar</a>
                     </li>
                 </ul>
             </div>
@@ -65,38 +66,38 @@
 
 
 <!-- SECCIÓN SOBRE EL FESTIVAL -->
-<section class="sobre-festival">
+<section class="sobre-festival" aria-label="Sobre el festival">
     <div class="titulo-con-lineas">
         <div class="lineaytitulo">
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
             <h2>EL EQUIPO</h2>
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
         </div>
     </div>
     <div class="contenido-equipo">
         <article class="miembro-equipo">
-            <img src="images/foto1.png" alt="Foto del equipo" class="foto-equipo">
+            <img src="images/foto1.png" alt="Camila Estrada" class="foto-equipo">
             <div class="info-equipo">
                 <h3>CAMILA ESTRADA - DIRECTORA ARTÍSTICA</h3>
                 <p>Curadora de cine con 15 años de experiencia, Camila selecciona filmes innovadores y relevantes para el festival. Su visión incluye obras de cine de autor y nuevas voces emergentes, aportando profundidad y diversidad a la programación.</p>
             </div>
         </article>
         <article class="miembro-equipo">
-            <img src="images/foto2.png" alt="Foto del equipo" class="foto-equipo">
+            <img src="images/foto2.png" alt="Lucas Hernández" class="foto-equipo">
             <div class="info-equipo">
                 <h3>LUCAS HERNÁNDEZ - DIRECTOR DE PROGRAMACIÓN</h3>
                 <p>Especialista en tendencias y géneros, Lucas equilibra cine popular y de autor en una programación atractiva. Su meticulosidad y amplio conocimiento garantizan una oferta variada que conecta con distintos públicos.</p>
             </div>
         </article>
         <article class="miembro-equipo">
-            <img src="images/foto3.png" alt="Foto del equipo" class="foto-equipo">
+            <img src="images/foto3.png" alt="Sofía Martínez" class="foto-equipo">
             <div class="info-equipo">
                 <h3>SOFÍA MARTÍNEZ - DIRECTORA DE OPERACIONES</h3>
                 <p>Experta en logística de eventos, Sofía asegura la organización impecable del festival. Su capacidad para anticipar y resolver problemas en tiempo real garantiza una experiencia fluida para asistentes y equipo.</p>
             </div>
         </article>
         <article class="miembro-equipo">
-            <img src="images/foto4.png" alt="Foto del equipo" class="foto-equipo">
+            <img src="images/foto4.png" alt="Diego Ramírez" class="foto-equipo">
             <div class="info-equipo">
                 <h3>DIEGO RAMIREZ - DIRECTOR DE RELACIONES PÚBLICAS Y MARKETING</h3>
                 <p>Encargado de maximizar el alcance del festival mediante estrategias de marketing efectivas y relaciones públicas sólidas. Diego conecta al festival con la audiencia global.</p>
@@ -106,12 +107,12 @@
     </section>
    
 
-<section class="visionymision">
+<section class="visionymision" aria-label="Misión y Visión de Cinefest Verité">
     <div class="titulo-con-lineas">
         <div class="lineaytitulo">
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
             <h2>MISIÓN Y VISIÓN</h2>
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -142,13 +143,12 @@
 </section>
 
 
-<section class="sobre-festival">
-
+<section class="sobre-festival" aria-label="Historia del festival">
     <div class="titulo-con-lineas">
         <div class="lineaytitulo">
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
             <h2>HISTORIA DEL FESTIVAL</h2>
-            <span class="linea"></span>
+            <span class="linea" aria-hidden="true"></span>
         </div>
     </div>
 
@@ -167,31 +167,50 @@
 
 
 <!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
-<section class="formulario">
+<section class="formulario" aria-label="Formulario de contacto">
     <div class="lineaytitulo">
-        <span class="linea"></span>
+        <span class="linea" aria-hidden="true"></span>
         <h2>FORMULARIO DE CONTACTO</h2>
-        <span class="linea"></span>
+        <span class="linea" aria-hidden="true"></span>
     </div>
 
     <div class="formulario-contacto">
     <div class="form-container">
         <form>
             <div class="form-row">
-                <div class="form-group"><input type="text" id="nombre" name="nombre" placeholder="Nombre" required ></div>
-                <div class="form-group"><input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required></div>
+                <div class="form-group">
+                    <label for="nombre" class="visually-hidden">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required >
+                </div>
+                <div class="form-group">
+                    <label for="apellidos" class="visually-hidden">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required>
+                </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group"><input type="email" id="email" name="email" placeholder="Email"  required></div>
-                <div class="form-group"><input type="tel" id="telefono" name="telefono" placeholder="Teléfono" ></div>
+                <div class="form-group">
+                    <label for="email" class="visually-hidden">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Email"  required>
+                </div>
+                <div class="form-group">
+                    <label for="telefono" class="visually-hidden">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" >
+                </div>
             </div>
 
             <div class="form-row">
-                <div class="form-group full-width"><input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required></div>
+                <div class="form-group full-width">
+                    <label for="mensaje" class="visually-hidden">Mensaje</label>
+                    <input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required>
+                </div>
             </div>
 
-            <div class="form-row"><div class="form-group full-width"><textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea></div>
+            <div class="form-row">
+                <div class="form-group full-width">
+                    <label for="asunto" class="visually-hidden">Asunto</label>
+                    <textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea>
+                </div>
             </div>
 
             <div class="form-row btn-row">
@@ -203,7 +222,7 @@
 </section>
 
 <!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
-<div class="partners-section">
+<div class="partners-section" aria-label="Partners y Colaboradores">
     <div class="partners-container">
         <div class="partners-left">Partners:</div>
         <div class="partners-right">Colaboradores</div>
@@ -211,7 +230,7 @@
 </div>
 
 <!-- COMIENZA EL FOOTER -->
-<footer class="footer-container">
+<footer class="footer-container" aria-label="Información del sitio">
     <div class="footer-links">
         <a href="#">Noticias</a>
         <a href="#">Notas de prensa</a>
@@ -224,11 +243,11 @@
     
     <!-- Íconos de redes sociales -->
     <div class="footer-social">
-        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-        <a href="#" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
-        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-        <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
-        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        <a href="#" aria-label="Instagram"><span class="fab fa-instagram" aria-hidden="true"></span><span class="visually-hidden">Instagram</span></a>
+        <a href="#" aria-label="X (Twitter)"><span class="fab fa-twitter" aria-hidden="true"></span><span class="visually-hidden">X (Twitter)</span></a>
+        <a href="#" aria-label="LinkedIn"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="visually-hidden">LinkedIn</span></a>
+        <a href="#" aria-label="TikTok"><span class="fab fa-tiktok" aria-hidden="true"></span><span class="visually-hidden">TikTok</span></a>
+        <a href="#" aria-label="YouTube"><span class="fab fa-youtube" aria-hidden="true"></span><span class="visually-hidden">YouTube</span></a>
     </div>
     <div class="footer-cookies">
         <a href="#">Política de cookies</a>
