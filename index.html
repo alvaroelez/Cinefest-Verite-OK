@@ -16,7 +16,7 @@
 <body>
     <div class="container">
         <header>
-            <h1>Descubre la historia de Cinefest Verite</h1>
+            <h1>Cinefest Verité - El mejor festival de cine documental</h1>
             <!-- MENÚ PRINCIPAL -->
             <nav class="menu-principal" aria-label="Menú principal">
                 <ul class="menu-items">
@@ -28,8 +28,10 @@
                     <li>
                         <div class="buscador">
                             <label for="buscador" class="visually-hidden">Buscar</label>
-                            <input type="text" placeholder="Buscador" id="buscador" name="buscador">
-                            <button type="button" aria-label="Buscar"><span class="fas fa-search" aria-hidden="true"></span></button>
+                            <input type="text" id="buscador" placeholder="Buscador" name="buscador">
+                            <button type="button" aria-label="Buscar" class="search-btn">
+                                <span class="fas fa-search" aria-hidden="true"></span>
+                            </button>
                         </div>
                     </li>
                     <li><a href="#ayuda">Ayuda</a></li>
@@ -60,220 +62,576 @@
                 </ul>
             </div>
 
-          <div class="cabecerasobre">
-          </div>
-          </header>
-
-
-<!-- SECCIÓN SOBRE EL FESTIVAL -->
-<section class="sobre-festival" aria-label="Sobre el festival">
-    <div class="titulo-con-lineas">
-        <div class="lineaytitulo">
-            <span class="linea" aria-hidden="true"></span>
-            <h2>EL EQUIPO</h2>
-            <span class="linea" aria-hidden="true"></span>
-        </div>
-    </div>
-    <div class="contenido-equipo">
-        <article class="miembro-equipo">
-            <img src="images/foto1.png" alt="Camila Estrada" class="foto-equipo">
-            <div class="info-equipo">
-                <h3>CAMILA ESTRADA - DIRECTORA ARTÍSTICA</h3>
-                <p>Curadora de cine con 15 años de experiencia, Camila selecciona filmes innovadores y relevantes para el festival. Su visión incluye obras de cine de autor y nuevas voces emergentes, aportando profundidad y diversidad a la programación.</p>
+            <!-- CABECERA INDEX -->
+            <div class="cabeceracontenido">
+                <div class="form-row btn-row">
+                    <button type="submit" class="btn-enviar">Tarifas</button>
+                </div>
             </div>
-        </article>
-        <article class="miembro-equipo">
-            <img src="images/foto2.png" alt="Lucas Hernández" class="foto-equipo">
-            <div class="info-equipo">
-                <h3>LUCAS HERNÁNDEZ - DIRECTOR DE PROGRAMACIÓN</h3>
-                <p>Especialista en tendencias y géneros, Lucas equilibra cine popular y de autor en una programación atractiva. Su meticulosidad y amplio conocimiento garantizan una oferta variada que conecta con distintos públicos.</p>
+        </header>
+
+        <main>
+        <!-- SECCIÓN EVENTOS EN DIRECTO -->
+        <section class="estilo1" id="eventos" aria-label="Eventos en directo">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea" aria-hidden="true"></span>
+                    <h2>EVENTOS EN DIRECTO</h2>
+                    <span class="linea" aria-hidden="true"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
             </div>
-        </article>
-        <article class="miembro-equipo">
-            <img src="images/foto3.png" alt="Sofía Martínez" class="foto-equipo">
-            <div class="info-equipo">
-                <h3>SOFÍA MARTÍNEZ - DIRECTORA DE OPERACIONES</h3>
-                <p>Experta en logística de eventos, Sofía asegura la organización impecable del festival. Su capacidad para anticipar y resolver problemas en tiempo real garantiza una experiencia fluida para asistentes y equipo.</p>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
+                <div class="carousel-track">
+                    <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>LA DIRECCIÓN DE FOTOGRAFÍA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/ladirecciondefotografia.png" alt="Cartel del documental La Dirección de Fotografía">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>MAKING OFF "LA NIEBLA"</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/mackingofflaniebla.png" alt="Cartel del documental Making Off 'La Niebla'">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>CÓMO ELABORAR UN GUIÓN</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/comoelaborarunguion.png" alt="Cartel del documental Cómo Elaborar un Guion">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>ENTREVISTA CON ROBERTO PICAFORT</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/entrevistaconelactorrobertpicafort.png" alt="Cartel de la entrevista con Roberto Picafort">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>JOSÉ MANRIQUE, DIRECTOR DE FOTOGRAFÍA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/josemanriquedirector.png" alt="Cartel del documental sobre José Manrique">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
             </div>
-        </article>
-        <article class="miembro-equipo">
-            <img src="images/foto4.png" alt="Diego Ramírez" class="foto-equipo">
-            <div class="info-equipo">
-                <h3>DIEGO RAMIREZ - DIRECTOR DE RELACIONES PÚBLICAS Y MARKETING</h3>
-                <p>Encargado de maximizar el alcance del festival mediante estrategias de marketing efectivas y relaciones públicas sólidas. Diego conecta al festival con la audiencia global.</p>
+        </section>
+
+        <!-- SECCIÓN PELÍCULAS DESTACADAS -->
+        <section class="estilo1" id="contenido" aria-label="Películas destacadas">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea" aria-hidden="true"></span>
+                    <h2>PELÍCULAS DESTACADAS</h2>
+                    <span class="linea" aria-hidden="true"></span>
+                </div>
+                <a href="contenido.html" class="ver-mas">ver +</a>
             </div>
-        </article>
-    </div>
-    </section>
-   
 
-<section class="visionymision" aria-label="Misión y Visión de Cinefest Verité">
-    <div class="titulo-con-lineas">
-        <div class="lineaytitulo">
-            <span class="linea" aria-hidden="true"></span>
-            <h2>MISIÓN Y VISIÓN</h2>
-            <span class="linea" aria-hidden="true"></span>
-        </div>
-    </div>
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
+                <div class="carousel-track peliculas-dos-filas">
+                    <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>SUSURROS DE LA NATURALEZA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/susurrosdelanaturaleza.png" alt="Cartel del documental Susurros de la Naturaleza">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Susurros de la Naturaleza">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
 
-
-    <div class="contenido-misiones">
-        <!-- Misión 1 -->
-        <div class="mision">
-            <h3>PROMOVER EL CINE DOCUMENTAL INDEPENDIENTE</h3>
-            <p>Cinefest Verité tiene como misión principal dar visibilidad al cine documental independiente, creando un espacio donde cineastas emergentes y establecidos puedan presentar sus trabajos.</p>
-            <p>El festival se compromete a destacar historias auténticas que aborden realidades complejas y necesarias, alejadas del enfoque comercial, para que el público conecte con voces originales y diversas.</p>
-        </div>
-        <!-- Misión 2 -->
-        <div class="mision">
-            <h3>DEMOCRATIZAR EL ACCESO AL CINE</h3>
-            <p>En Cinefest Verité, creemos que el cine documental debe ser accesible para todos. Nuestro festival apuesta por la democratización del acceso al cine, con proyecciones tanto online como presenciales, para que cualquier persona, sin importar su ubicación o recursos, pueda descubrir estas historias y participar activamente en el festival.</p>
-        </div>
-        <!-- Misión 3 -->
-        <div class="mision">
-            <h3>CREAR UN FESTIVAL ONLINE INNOVADOR</h3>
-            <p>Cinefest Verité se propone innovar constantemente en la forma en que los espectadores interactúan con el cine documental. Trabajamos para incorporar tecnologías como realidad virtual y experiencias inmersivas para que la audiencia no solo vea las historias, sino que las sienta y viva, buscando transformar la manera en que se percibe y disfruta el cine documental.</p>
-        </div>
-        <!-- Misión 4 -->
-        <div class="mision">
-            <h3>FOMENTAR EL DIÁLOGO Y LA REFLEXIÓN SOCIAL</h3>
-            <p>Una de nuestras misiones clave es generar un espacio de diálogo y reflexión en torno a las realidades que se presentan en pantalla. A través de charlas, mesas redondas y eventos en vivo, Cinefest Verité busca crear una comunidad consciente, que pueda compartir y debatir sobre los temas expuestos en cada documental.</p>
-        </div>
-    </div> 
-</section>
-
-
-<section class="sobre-festival" aria-label="Historia del festival">
-    <div class="titulo-con-lineas">
-        <div class="lineaytitulo">
-            <span class="linea" aria-hidden="true"></span>
-            <h2>HISTORIA DEL FESTIVAL</h2>
-            <span class="linea" aria-hidden="true"></span>
-        </div>
-    </div>
-
-    <div class="contenidosobre">
-        <div class="texto">
-            <p>Cinefest Verité nació hace tan sólo un año con el sueño de crear un espacio dedicado al cine documental que desafiara los formatos convencionales y diera voz a historias que normalmente quedan en las sombras. La idea surgió en una pequeña reunión de cineastas y periodistas independientes, quienes, al ver la falta de plataformas accesibles para el cine documental, decidieron unirse y crear su propio festival. Nuestra visión principal es que Cinefest Verité se destaque por su enfoque en la autenticidad y en la democratización del acceso al cine, acogiendo tanto a cineastas emergentes como a profesionales consagrados.</p>
-            <p>El festival busca expandirse con el paso del tiempo, integrando nuevas tecnologías y eventos en vivo que permiten la interacción entre cineastas y audiencia a nivel global. Cinefest Verité busca ser un referente en el mundo documental, con un público creciente que apoya su misión de mostrar la verdad sin filtros y explorar realidades que impactan y transforman. La historia del festival continuará en cada edición, impulsada por la pasión de aquellos que creen en el poder del cine para generar un cambio.</p>
-        </div>
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>CAMINOS ENTRELAZADOS</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/caminoentrelazados.png" alt="Cartel del documental Caminos Entrelazados">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Caminos Entrelazados">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>ECOS DE CREATIVIDAD</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/comoelaborarunguion.png" alt="Cartel del documental Ecos de Creatividad">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Ecos de Creatividad">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>LA NIEBLA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/lanieblabaterecords.png" alt="Cartel del documental La Niebla">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película La Niebla">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
         
-
-    </div>
-
-</section>
-
-
-
-
-<!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
-<section class="formulario" aria-label="Formulario de contacto">
-    <div class="lineaytitulo">
-        <span class="linea" aria-hidden="true"></span>
-        <h2>FORMULARIO DE CONTACTO</h2>
-        <span class="linea" aria-hidden="true"></span>
-    </div>
-
-    <div class="formulario-contacto">
-    <div class="form-container">
-        <form>
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="nombre" class="visually-hidden">Nombre</label>
-                    <input type="text" id="nombre" name="nombre" placeholder="Nombre" required >
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>EN NOMBRE DE LA JUSTICIA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/ennombredelajusticia.png" alt="Cartel del documental En Nombre de la Justicia">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película En Nombre de la Justicia">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 6 -->
+                    <article class="articulos">
+                        <h3>MELODÍA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/melodia.png" alt="Cartel del documental Melodía">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Melodía">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 7 -->
+                    <article class="articulos">
+                        <h3>TEJIDO EN PRUEBAS</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/tejidoenpruebas.png" alt="Cartel del documental Tejido en Pruebas">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Tejido en Pruebas">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+        
+                    <!-- Artículo 8 -->
+                    <article class="articulos">
+                        <h3>ENTRE LA GLORIA Y LA DERROTA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/entrelagloriayladerrota.png" alt="Cartel del documental Entre la Gloria y la Derrota">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Entre la Gloria y la Derrota">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
                 </div>
-                <div class="form-group">
-                    <label for="apellidos" class="visually-hidden">Apellidos</label>
-                    <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos"  required>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN DE NOTICIAS -->
+        <section class="estilo1" aria-label="Noticias">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea" aria-hidden="true"></span>
+                    <h2>NOTICIAS</h2>
+                    <span class="linea" aria-hidden="true"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
+                <div class="carousel-track">
+
+                    <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>"LA NIEBLA" BATE RÉCORDS</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/lanieblabaterecords.png" alt="Imagen representativa de la noticia 'La Niebla Bate Récords'">
+                            <a href="#" class="btn-ver">+ info</a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>10 CURIOSIDADES DE "CAMINOS ENTRELAZADOS"</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/10curiosidadesdecaminos.png" alt="Imagen representativa de la noticia sobre 'Caminos Entrelazados'">
+                            <a href="#" class="btn-ver">+ info</a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>"VOCES SILENCIADAS" SE CENTRA EN LA CENSURA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/vocessilenciadassecentra.png" alt="Imagen representativa de la noticia sobre 'Voces Silenciadas'">
+                            <a href="#" class="btn-ver">+ info</a>
+                        </div>
+                    </article>
+
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>EL COSTO REAL DEL CINE</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/elcostrorealdelcine.png" alt="Imagen representativa de la noticia 'El Costo Real del Cine'">
+                            <a href="#" class="btn-ver">+ info</a>
+                        </div>
+                    </article>  
+
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>LA HISTORIA DETRÁS DE 'EN NOMBRE DE LA JUSTICIA'</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/ennombredelajusticia.png" alt="Imagen representativa de 'En Nombre de la Justicia'">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película En Nombre de la Justicia">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN ENTREVISTAS -->
+        <section class="estilo1" aria-label="Entrevistas">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea" aria-hidden="true"></span>
+                    <h2>ENTREVISTAS</h2>
+                    <span class="linea" aria-hidden="true"></span>
+                </div>
+                <a href="#" class="ver-mas">ver +</a>
+            </div>
+
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
+                <div class="carousel-track">
+
+                    <!-- Artículo 1 -->
+                    <article class="articulos">
+                        <h3>LUCAS BONANY, PROTAGONISTA DE "LA NIEBLA"</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/lucasbonanyprotagonista.png" alt="Imagen de Lucas Bonany, protagonista de 'La Niebla'">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 2 -->
+                    <article class="articulos">
+                        <h3>JOSÉ MANRIQUE, DIRECTOR DE FOTOGRAFÍA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/josemanriquedirector.png" alt="Imagen de José Manrique, director de fotografía">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 3 -->
+                    <article class="articulos">
+                        <h3>GARCILASO GARCÍA, GUIONISTA</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/garcilasogarciaguionista.png" alt="Imagen de Garcilaso García, guionista">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+            
+                    <!-- Artículo 4 -->
+                    <article class="articulos">
+                        <h3>ABEL ORTÍZ, DIRECTOR DE "RECUERDOS DEL AYER"</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/abelortizdirector.png" alt="Imagen de Abel Ortíz, director de 'Recuerdos del Ayer'">
+                            <a href="#" class="btn-ver">ver <span class="fas fa-eye" aria-hidden="true"></span></a>
+                        </div>
+                    </article> 
+
+                    <!-- Artículo 5 -->
+                    <article class="articulos">
+                        <h3>ENTREVISTA A OSCAR RUÍZ DE "MELODÍA"</h3>
+                        <div class="contenedor-imagen">
+                            <img src="images/melodia.png" alt="Cartel del documental Melodía">
+                            <a href="ficha.html" class="icono-play">
+                                <img src="images/mingcute_play-fill.png" alt="Reproducir película Melodía">
+                            </a>
+                            <a href="#" class="btn-ver">trailer <span class="fas fa-play" aria-hidden="true"></span></a>
+                        </div>
+                    </article>
+
+                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+        <!-- SECCIÓN CLASIFICACIÓN ACTUAL -->
+        <section class="estilo1" aria-label="Clasificación Actual">
+            <div class="titulo-con-lineas">
+                <div class="lineaytitulo">
+                    <span class="linea" aria-hidden="true"></span>
+                    <h2>CLASIFICACIÓN ACTUAL</h2>
+                    <span class="linea" aria-hidden="true"></span>
                 </div>
             </div>
 
-            <div class="form-row">
-                <div class="form-group">
-                    <label for="email" class="visually-hidden">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Email"  required>
+            <!-- Container que engloba el carrusel --> 
+            <div class="carousel-container">
+                <button class="carousel-btn left-btn" aria-label="Ir al artículo anterior">
+                    <span class="fas fa-chevron-left" aria-hidden="true"></span>
+                </button>
+                <div class="carousel-track">
+
+                  <!-- Clasificación 1 --> 
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">CIENCIA Y TECNOLOGÍA</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">La Niebla</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Clasificación 2 -->      
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">NATURALEZA Y MEDIO AMBIENTE</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Susurros de la naturaleza</p>
+                      </div>
+                    </div>
+                  </a>
+      
+                  <!-- Clasificación 3 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">POLÍTICA Y SOCIEDAD</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Voces Silenciadas</p>
+                      </div>
+                    </div>
+                  </a>
+            
+                  <!-- Clasificación 4 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">CULTURA Y ARTE</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Luz entre cenizas</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Clasificación 5 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">MÚSICA Y DEPORTE</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Entre la Gloria y la Derrota</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Clasificación 6 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">INVESTIGACIÓN Y CRIMEN</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">En busca del conocimiento</p>
+                      </div>
+                    </div>
+                  </a>
+
+                  <!-- Clasificación 7 -->
+                  <a href="#" class="card-link">
+                    <div class="card" style="background-image: url('images/tela_clasificacion.png');">
+                      <h2 class="card-title">VIDAS PERSONALES Y BIOGRAFÍAS</h2>
+                      <div class="card-content">
+                        <div class="icon" aria-hidden="true">🏆</div>
+                        <p class="card-text">Recuerdos del ayer</p>
+                      </div>
+                    </div>
+                  </a>
+
                 </div>
-                <div class="form-group">
-                    <label for="telefono" class="visually-hidden">Teléfono</label>
-                    <input type="tel" id="telefono" name="telefono" placeholder="Teléfono" >
-                </div>
+                <button class="carousel-btn right-btn" aria-label="Ir al artículo siguiente">
+                    <span class="fas fa-chevron-right" aria-hidden="true"></span>
+                </button>
+            </div>
+        </section>
+
+
+        <!-- SECCIÓN PARA EL FORMULARIO DE CONTACTO -->
+        <section class="formulario" aria-label="Formulario de contacto">
+            <div class="lineaytitulo">
+                <span class="linea" aria-hidden="true"></span>
+                <h2>FORMULARIO DE CONTACTO</h2>
+                <span class="linea" aria-hidden="true"></span>
             </div>
 
-            <div class="form-row">
-                <div class="form-group full-width">
-                    <label for="mensaje" class="visually-hidden">Mensaje</label>
-                    <input type="text" id="mensaje" name="mensaje" placeholder="Mensaje"  required>
+            <div class="formulario-contacto">
+                <div class="form-container">
+                    <form>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="nombre">nombre</label>
+                                <input type="text" id="nombre" name="nombre" placeholder="Nombre:" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="apellidos">apellidos</label>
+                                <input type="text" id="apellidos" name="apellidos" placeholder="Apellidos:" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="email">email</label>
+                                <input type="email" id="email" name="email" placeholder="email:" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="telefono">teléfono</label>
+                                <input type="tel" id="telefono" name="telefono" placeholder="Teléfono:">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="mensaje">mensaje</label>
+                                <input type="text" id="mensaje" name="mensaje" placeholder="Asunto:" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full-width">
+                                <label for="asunto">asunto</label>
+                                <textarea id="asunto" name="asunto" rows="4" placeholder="Mensaje:" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="form-row btn-row">
+                            <button type="submit" class="btn-enviar">Enviar</button>
+                        </div>
+                    </form>
                 </div>
             </div>
+        </section>
 
-            <div class="form-row">
-                <div class="form-group full-width">
-                    <label for="asunto" class="visually-hidden">Asunto</label>
-                    <textarea id="asunto" name="asunto" rows="4" placeholder="Asunto"  required></textarea>
-                </div>
+        <!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
+        <div class="partners-section" aria-label="Partners y Colaboradores">
+            <div class="partners-container">
+                <div class="partners-left">Partners:</div>
+                <div class="partners-right">Colaboradores</div>
             </div>
+        </div>
 
-            <div class="form-row btn-row">
-                <button type="submit" class="btn-enviar">Enviar</button>
+        </main>
+
+        <!-- COMIENZA EL FOOTER -->
+        <footer class="footer-container" aria-label="Información del sitio">
+            <div class="footer-links">
+                <a href="#">Noticias</a>
+                <a href="#">Notas de prensa</a>
+                <a href="#">Contacto</a>
+                <a href="#">Información legal</a>
+                <a href="#">Galería fotográfica</a>
+                <a href="#">Trabaja con nosotros</a>
+                <a href="#">Ayuda</a>
             </div>
-        </form>
+            
+            <!-- Íconos de redes sociales -->
+            <div class="footer-social">
+                <a href="#">
+                    <span class="fab fa-instagram" aria-hidden="true"></span>
+                    <span class="visually-hidden">Instagram</span>
+                </a>
+                <a href="#">
+                    <span class="fab fa-twitter" aria-hidden="true"></span>
+                    <span class="visually-hidden">X (Twitter)</span>
+                </a>
+                <a href="#">
+                    <span class="fab fa-linkedin-in" aria-hidden="true"></span>
+                    <span class="visually-hidden">LinkedIn</span>
+                </a>
+                <a href="#">
+                    <span class="fab fa-tiktok" aria-hidden="true"></span>
+                    <span class="visually-hidden">TikTok</span>
+                </a>
+                <a href="#">
+                    <span class="fab fa-youtube" aria-hidden="true"></span>
+                    <span class="visually-hidden">YouTube</span>
+                </a>
+            </div>
+            
+            <div class="footer-cookies">
+                <a href="#">Política de cookies</a>
+            </div>
+        </footer>
+
+        <!-- SCRIPT PARA EL CARRUSEL -->
+        <script>
+            document.querySelectorAll('.carousel-container').forEach(container => {
+                const track = container.querySelector('.carousel-track');
+                const btnLeft = container.querySelector('.left-btn');
+                const btnRight = container.querySelector('.right-btn');
+
+                // Ajusta la cantidad de scroll
+                const scrollAmount = 300;
+
+                btnLeft.addEventListener('click', () => {
+                    track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                });
+
+                btnRight.addEventListener('click', () => {
+                    track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                });
+            });
+        </script>
+
     </div>
-    </div>
-</section>
-
-<!-- SECCIÓN PARA PARTNERS Y COLABORADORES -->
-<div class="partners-section" aria-label="Partners y Colaboradores">
-    <div class="partners-container">
-        <div class="partners-left">Partners:</div>
-        <div class="partners-right">Colaboradores</div>
-    </div>
-</div>
-
-<!-- COMIENZA EL FOOTER -->
-<footer class="footer-container" aria-label="Información del sitio">
-    <div class="footer-links">
-        <a href="#">Noticias</a>
-        <a href="#">Notas de prensa</a>
-        <a href="#">Contacto</a>
-        <a href="#">Información legal</a>
-        <a href="#">Galería fotográfica</a>
-        <a href="#">Trabaja con nosotros</a>
-        <a href="#">Ayuda</a>
-    </div>
-    
-    <!-- Íconos de redes sociales -->
-    <div class="footer-social">
-        <a href="#" aria-label="Instagram"><span class="fab fa-instagram" aria-hidden="true"></span><span class="visually-hidden">Instagram</span></a>
-        <a href="#" aria-label="X (Twitter)"><span class="fab fa-twitter" aria-hidden="true"></span><span class="visually-hidden">X (Twitter)</span></a>
-        <a href="#" aria-label="LinkedIn"><span class="fab fa-linkedin-in" aria-hidden="true"></span><span class="visually-hidden">LinkedIn</span></a>
-        <a href="#" aria-label="TikTok"><span class="fab fa-tiktok" aria-hidden="true"></span><span class="visually-hidden">TikTok</span></a>
-        <a href="#" aria-label="YouTube"><span class="fab fa-youtube" aria-hidden="true"></span><span class="visually-hidden">YouTube</span></a>
-    </div>
-    <div class="footer-cookies">
-        <a href="#">Política de cookies</a>
-    </div>
-</footer>
-
-<!-- SCRIPT PARA EL CARRUSEL -->
-<script>
-    document.querySelectorAll('.carousel-container').forEach(container => {
-        const track = container.querySelector('.carousel-track');
-        const btnLeft = container.querySelector('.left-btn');
-        const btnRight = container.querySelector('.right-btn');
-
-         // Ajusta la cantidad de scroll
-        const scrollAmount = 300;
-
-        btnLeft.addEventListener('click', () => {
-            track.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-        });
-
-        btnRight.addEventListener('click', () => {
-            track.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-        });
-    });
-</script>
-
-</div>
 </body>
 </html>
